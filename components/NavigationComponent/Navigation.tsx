@@ -56,6 +56,11 @@ const Navigation = () => {
               <a onClick={() => handleRouteChange("Career")}>Career</a>
             </Link>
           </li>
+          <li>
+            <Link href="/contact">
+              <a onClick={() => handleRouteChange("Contact")}>Contact</a>
+            </Link>
+          </li>
         </ul>
       </nav>
     </React.Fragment>
