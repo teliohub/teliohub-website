@@ -7,7 +7,6 @@ const SayHelloIntro = (): JSX.Element => {
             <h1>Say Hello</h1>
             <h3>We are happy to help with:</h3>
         </React.Fragment>
-
     );
 }
 
