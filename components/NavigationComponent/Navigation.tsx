@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./navigation.module.css";
 import React, { useState, useEffect } from "react";
+import Hamburger from 'hamburger-react'
 
 const Navigation = () => {
   const [isNavSidebarActive, setIsNavSidebarAcive] = useState<Boolean>(false);
@@ -66,9 +67,9 @@ const Navigation = () => {
     </React.Fragment>
   ) : (
     <React.Fragment>
-      <button className={styles.button} onClick={handleClick}>
-        🍔
-      </button>
+      <div className={styles.burger}>
+        <Hamburger toggled={isNavSidebarActive} toggle={handleClick} />
+      </div>
     </React.Fragment>
   );
 };

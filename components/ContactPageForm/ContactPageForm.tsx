@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import SayHelloIntro from './pages/SayHelloIntro';
-import NameContact from './pages/NameContact';
-import NameCompany from './pages/NameCompany';
-import Services from './pages/Services';
-import EmailContact from './pages/EmailContact';
+import styles from './contactPageForm.module.css'
 
 const ContactPageForm = (): JSX.Element => {
     const [pageIndex, setPageIndex] = useState<number>(0);
@@ -51,39 +47,60 @@ const ContactPageForm = (): JSX.Element => {
 
     const pages: JSX.Element[] = [
         <React.Fragment>
-            <h1>Say Hello</h1>
-            <h3>We are happy to help with:</h3>
-            <div onClick={() => setIsNewProject(true)}>New project</div>
-            <div onClick={() => setIsNewProject(false)}>Other</div>
+            <div className={styles.pageOne}>
+                <h1>Say Hello</h1>
+                <h3>We are happy to help with:</h3>
+                <div onClick={() => setIsNewProject(true)}>
+                    <div className={styles.radioButton}></div>
+                    <h2>New project</h2>
+                </div>
+                <div onClick={() => setIsNewProject(false)}>
+                    <div className={styles.radioButton}></div>
+                    <h2>Other</h2>
+                </div>
+            </div>
         </React.Fragment>,
         <React.Fragment>
-            <h1>Nice meeting you!</h1>
-            <h1>What's your name?</h1>
-            <input required value={contactName} onInput={(e: React.ChangeEvent<HTMLInputElement>) => setContactName(e.target.value)} type="text" />
-            <button onClick={() => changePage()}>next</button>
+            <div className={styles.pageTwo}>
+                <h1>Nice meeting you!</h1>
+                <h1>What's your name?</h1>
+                <input required value={contactName} placeholder="Your name" onInput={(e: React.ChangeEvent<HTMLInputElement>) => setContactName(e.target.value)} type="text" />
+                <button onClick={() => changePage()}>
+                    <div className={styles.arrowRight}></div>
+                </button>
+            </div>
         </React.Fragment>,
         <React.Fragment>
-            <h1>What company do you represent?</h1>
-            <input required value={companyName} onInput={(e: React.ChangeEvent<HTMLInputElement>) => setCompanyName(e.target.value)} type="text" />
-            <button onClick={() => changePage()}>next</button>
+            <div className={styles.pageThree}>
+                <h1>What company do you represent?</h1>
+                <input placeholder="Your company name" required value={companyName} onInput={(e: React.ChangeEvent<HTMLInputElement>) => setCompanyName(e.target.value)} type="text" />
+                <button onClick={() => changePage()}><div className={styles.arrowRight}></div></button>
+            </div>
         </React.Fragment>,
         <React.Fragment>
-            <h1>We offer variety of services. What are you interested in?</h1>
-            <div onClick={() => typeOfService('Mobile applications')}>Mobile Applications</div>
-            <div onClick={() => typeOfService('Augmented reality')}>Augmented reality</div>
-            <div onClick={() => typeOfService('Online shops')}>Online shops</div>
-            <div onClick={() => typeOfService('Products')}>Products</div>
+            <div className={styles.pageFour}>
+                <h1>We offer variety of services. What are you interested in?</h1>
+                <div onClick={() => typeOfService('Mobile applications')}>
+                    <div className={styles.radioButton}></div><h2>Mobile Applications</h2></div>
+                <div onClick={() => typeOfService('Augmented reality')}><div className={styles.radioButton}></div><h2>Augmented reality</h2></div>
+                <div onClick={() => typeOfService('Online shops')}><div className={styles.radioButton}></div><h2>Online shops</h2></div>
+                <div onClick={() => typeOfService('Products')}><div className={styles.radioButton}></div><h2>Products</h2></div>
+            </div>
         </React.Fragment>,
         <React.Fragment>
-            <h1>Tell us a little bit more</h1>
-            <h2>Let us know about your problem, budget and needs.</h2>
-            <input required value={moreInformation} onInput={(e: React.ChangeEvent<HTMLInputElement>) => setMoreInformation(e.target.value)} type="text" />
-            <button onClick={() => changePage()}>next</button>
+            <div className={styles.pageFive}>
+                <h1>Tell us a little bit more</h1>
+                <h2>Let us know about your problem, budget and needs.</h2>
+                <input placeholder="Your brief" required value={moreInformation} onInput={(e: React.ChangeEvent<HTMLInputElement>) => setMoreInformation(e.target.value)} type="text" />
+                <button onClick={() => changePage()}><div className={styles.arrowRight}></div></button>
+            </div>
         </React.Fragment>,
         <React.Fragment>
-            <h1>We'll get to you as soon as possible!</h1>
-            <input required value={contactEmail} onInput={(e: React.ChangeEvent<HTMLInputElement>) => setContactEmail(e.target.value)} type="text" />
-            <button onClick={() => visualRequest()}>next</button>
+            <div className={styles.pageSix}>
+                <h1>We'll get to you as soon as possible!</h1>
+                <input placeholder="Your email" required value={contactEmail} onInput={(e: React.ChangeEvent<HTMLInputElement>) => setContactEmail(e.target.value)} type="text" />
+                <button onClick={() => visualRequest()}><div className={styles.arrowRight}></div></button>
+            </div>
         </React.Fragment>
     ]
 
@@ -93,7 +110,7 @@ const ContactPageForm = (): JSX.Element => {
 
     return (
         <React.Fragment>
-            <form onSubmit={handleSubmit}>
+            <form className={styles.formControl} onSubmit={handleSubmit}>
                 {pages[pageIndex]}
             </form>
         </React.Fragment>

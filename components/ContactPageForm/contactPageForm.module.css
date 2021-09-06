@@ -1,0 +1,82 @@
+.formControl {
+    padding: 50px;
+}
+
+.pageOne h1{
+ color: #181818;
+ font-weight: bolder;
+}
+
+.pageOne h2, .pageFour h2 {
+    margin-left: 15px;
+    color: #181818;
+    font-weight: bold;
+}
+
+.pageOne h3, .pageFive h2 {
+    color: #181818;
+    font-weight: normal;
+}
+
+.pageFive h2 {
+    font-size: 19px;
+}
+
+.pageOne div, .pageFour div {
+    display: flex;
+    align-items: center;
+}
+
+.radioButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.pageTwo h1, .pageThree h1, .pageFour h1, .pageFive h1, .pageSix h1 {
+    font-size: 30px;
+}
+
+.pageTwo input, .pageThree input, .pageFive input, .pageSix input {
+    border: none;
+    background-color: #F9F9F9;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 30px;
+    font-size: 23px;
+}
+
+.pageTwo button, .pageThree button, .pageFive button, .pageSix button {
+    border: none;
+    background-color: #181818;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    float: right;
+    margin-top: 50px;
+}
+
+.arrowRight {
+    position: relative;
+    padding: 5px;
+    background: #181818;
+    height: 50px;
+    width: 50px;
+    transition: all 0.2s linear;
+    border-radius: 50%;
+}
+
+.arrowRight::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  z-index: 11;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  top: 10px;
+  transform: rotate(135deg);
+}
