@@ -46,7 +46,7 @@ const ContactPageForm = (): JSX.Element => {
     }, [isNewProject])
 
     const pages: JSX.Element[] = [
-        <React.Fragment>
+        <React.Fragment key="pageOne">
             <div className={styles.pageOne}>
                 <h1>Say Hello</h1>
                 <h3>We are happy to help with:</h3>
@@ -60,24 +60,24 @@ const ContactPageForm = (): JSX.Element => {
                 </div>
             </div>
         </React.Fragment>,
-        <React.Fragment>
+        <React.Fragment key="pageTwo">
             <div className={styles.pageTwo}>
                 <h1>Nice meeting you!</h1>
-                <h1>What's your name?</h1>
+                <h1>What&apos;s your name?</h1>
                 <input required value={contactName} placeholder="Your name" onInput={(e: React.ChangeEvent<HTMLInputElement>) => setContactName(e.target.value)} type="text" />
                 <button onClick={() => changePage()}>
                     <div className={styles.arrowRight}></div>
                 </button>
             </div>
         </React.Fragment>,
-        <React.Fragment>
+        <React.Fragment key="pageThree">
             <div className={styles.pageThree}>
                 <h1>What company do you represent?</h1>
                 <input placeholder="Your company name" required value={companyName} onInput={(e: React.ChangeEvent<HTMLInputElement>) => setCompanyName(e.target.value)} type="text" />
                 <button onClick={() => changePage()}><div className={styles.arrowRight}></div></button>
             </div>
         </React.Fragment>,
-        <React.Fragment>
+        <React.Fragment key="pageFour">
             <div className={styles.pageFour}>
                 <h1>We offer variety of services. What are you interested in?</h1>
                 <div onClick={() => typeOfService('Mobile applications')}>
@@ -87,7 +87,7 @@ const ContactPageForm = (): JSX.Element => {
                 <div onClick={() => typeOfService('Products')}><div className={styles.radioButton}></div><h2>Products</h2></div>
             </div>
         </React.Fragment>,
-        <React.Fragment>
+        <React.Fragment key="pageFive">
             <div className={styles.pageFive}>
                 <h1>Tell us a little bit more</h1>
                 <h2>Let us know about your problem, budget and needs.</h2>
@@ -95,9 +95,9 @@ const ContactPageForm = (): JSX.Element => {
                 <button onClick={() => changePage()}><div className={styles.arrowRight}></div></button>
             </div>
         </React.Fragment>,
-        <React.Fragment>
+        <React.Fragment key="pageSix">
             <div className={styles.pageSix}>
-                <h1>We'll get to you as soon as possible!</h1>
+                <h1>We&apos;ll get to you as soon as possible!</h1>
                 <input placeholder="Your email" required value={contactEmail} onInput={(e: React.ChangeEvent<HTMLInputElement>) => setContactEmail(e.target.value)} type="text" />
                 <button onClick={() => visualRequest()}><div className={styles.arrowRight}></div></button>
             </div>
