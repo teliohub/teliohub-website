@@ -1,11 +1,17 @@
 .nav {
   display: flex;
   position: absolute;
-  top: 90px;
+  top: 8rem;
   left: 0;
+  right: 0;
   min-height: 100vh;
   width: 100%;
-  background: #684141;
+  background: #f8f8f8f1;
+  z-index: 999999;
+}
+
+.hideMenu {
+  display: none;
 }
 
 .nav ul {
@@ -20,22 +26,53 @@
   list-style-type: none;
   margin: 1.5rem 0;
   font-size: 2rem;
+  border-bottom: 1px solid #a3a3a3;
+  width: 80%;
+  text-align: center;
+  padding: 0 0 1rem;
+  position: relative;
 }
 
+.nav ul li:last-child {
+  border-bottom: none;
+}
+
+.routeActive {
+  width: 4px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  background-color: #181818;
+}
+
+.liControl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.liControl h4 {
+  margin-right: 1rem;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: normal;
+}
 .nav ul li a {
   text-decoration: none;
 }
 
 .container {
   position: absolute;
-  right: 3rem;
-  z-index: 2;
+  z-index: 999999;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  padding: 2rem;
 }
 
 .container li {
   list-style-type: none;
-  margin: 0 2rem;
 }
 
 .button {
