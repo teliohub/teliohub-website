@@ -3,7 +3,7 @@ import styles from "./navigation.module.css";
 import React, { useState, useEffect } from "react";
 import Hamburger from 'hamburger-react';
 import Image from 'next/image';
-import image from '../../public/assets/logo.png';
+import image from '../../public/assets/Logo.png';
 
 
 const Navigation = () => {
