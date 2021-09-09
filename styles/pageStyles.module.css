@@ -1,0 +1,7 @@
+.container {
+    height: 754px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 0.7rem;
+}

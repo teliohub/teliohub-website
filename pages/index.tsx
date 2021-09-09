@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Box from '../components/BoxServices/BoxService'
+import styles from '../styles/pageStyles.module.css'
 
 const Home: NextPage = () => {
   return (
@@ -11,20 +12,21 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="">DrowSa!</a>
-        </h1>
+      <main className={styles.container}>
+        <div>
+          <Box type={'empty'} />
+          <Box type={'empty'} />
+          <Box title={'Augmented Reality'} type={'black'}/>
+          <Box type={'gray'}/>
+        </div>
+        <div>
+          <Box type={'gray'}/>
+          <Box title={'Mobile Applications'} type={'black'}/>
+          <Box title={'We make Technology more Human'} type={'empty'} />
+          <Box title={'Online Shops, Web&More'} type={'black'}/>
+        </div>
       </main>
 
-      <footer className={styles.footer}>
-        <span>
-          Powered by{' '}
-          <span className={styles.logo}>
-            DrowSa
-          </span>
-        </span>
-      </footer>
     </div>
   )
 }

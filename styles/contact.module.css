@@ -5,14 +5,15 @@
 }
 
 .body img {
-    margin-top: - 23px !important
+    margin-top: - 23px !important;
+    transform: translateY(-10px);
 }
 
 .logoPage h1 {
     font-size: 65px;
     font-weight: bolder;
     margin-left: -50px;
-    margin-top: 45px;
+    margin-top: 43px;
 }
 
 .body {

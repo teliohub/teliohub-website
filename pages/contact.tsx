@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactPageForm from '../components/ContactPageForm/ContactPageForm';
 import Image from 'next/image'
-import styles from './contact.module.css'
+import styles from '../styles/contact.module.css'
 
 import image from '../public/assets/wordart.png';
 
