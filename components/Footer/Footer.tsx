@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Link from "next/link";
 import styles from "./footer.module.css";
 
@@ -49,7 +49,7 @@ const Footer = (): JSX.Element => {
           <p className={menuPosition === 5 ? '' : styles.hideIfNotActive}>You Are Here</p>
         </li>
       </ul>
-      <h2>Let's collaborate</h2>
+      <h2>Let&apos;s collaborate</h2>
       <h3 className={styles.changeOpacity}>ouremail@gmail.com</h3>
       </footer>
   );
