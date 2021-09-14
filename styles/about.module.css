@@ -1,0 +1,107 @@
+.logoPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logoPage img {
+  margin-top: -1px !important;
+  transform: translateY(-10px);
+}
+
+.body {
+  background-color: #f9f9f9;
+}
+
+.line {
+  width: 50px;
+  height: 5px;
+  background-color: #181818;
+  margin: 10px 0 20px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.container h1 {
+  font-weight: 900;
+  color: #181818;
+  font-size: 40px;
+}
+
+.container h2 {
+  color: #181818;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.services p {
+  margin: 20px 0;
+  line-height: 25px;
+  font-size: 20px;
+  color: #181818;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-family: Montserrat;
+  letter-spacing: normal;
+}
+
+.services div {
+  margin: 250px auto;
+}
+
+.services div:last-child {
+    margin-bottom: 0;
+}
+
+.absImagePos {
+    position: absolute;
+    width: 280px;
+    height: 150px;
+    background-image: url('../public/assets/about/Ellipse1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.absImageSecondBallPos {
+    position: absolute;
+    width: 90%;
+    height: 150px;
+    background-image: url('../public/assets/about/Ellipse2.png');
+    background-position-x: 170px;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+}
+
+.absImageTargetPos {
+    position: absolute;
+    width: 90%;
+    height: 200px;
+    background-image: url('../public/assets/about/target.png');
+    background-position-x: 0;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+}
+
+.absImageTriangleSolidPos {
+    position: absolute;
+    width: 90%;
+    height: 200px;
+    background-image: url('../public/assets/about/Polygon1.png');
+    background-position-x: 0;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+}
+
+.absImageTriangleShadowPos {
+    position: absolute;
+    width: 90%;
+    height: 220px;
+    background-image: url('../public/assets/about/Path13.png');
+    background-position-x: 0;
+    background-repeat: no-repeat;
+}
