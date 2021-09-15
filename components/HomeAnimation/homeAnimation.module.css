@@ -1,0 +1,32 @@
+.backgroundImage {
+  position: absolute;
+  width: 40%;
+  left: 0;
+  top: 10px;
+  height: 760px;
+  background-image: url("../../public/assets/home/home.png");
+  background-position: center;
+  z-index: 0;
+  transition: 1s ease-in-out;
+}
+
+.backgroundImage span, .backgroundImageFullWidth span {
+    color: white;
+  margin: 50px 0 20px 22%;
+  display: block;
+  width: 100px;
+  font-size: 17px;
+}
+
+
+.backgroundImageFullWidth {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 10px;
+  height: 760px;
+  background-image: url("../../public/assets/home/home.png");
+  background-position: center;
+  z-index: 0;
+  transition: 1s ease-in-out;
+}

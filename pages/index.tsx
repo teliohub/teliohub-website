@@ -1,9 +1,17 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Box from '../components/BoxServices/BoxService'
-import styles from '../styles/pageStyles.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import { useState } from "react";
+import Box from "../components/BoxServices/BoxService";
+import HomeAnimation from "../components/HomeAnimation/HomeAnimation";
+import styles from "../styles/pageStyles.module.css";
 
 const Home: NextPage = () => {
+  const [isClicked, setIsClicked] = useState<boolean>(false);
+
+  const handleBackground = () => {
+    setIsClicked(true);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,23 +20,30 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <HomeAnimation isClicked={isClicked} />
+      <p
+        className={
+          isClicked ? styles.backgroundClicked : styles.backgroundParaButton
+        }
+        onClick={() => handleBackground()}
+      >
+        {isClicked ? 'You, you are the star' : 'Click here'}
+      </p>
       <main className={styles.container}>
         <div>
-          <Box type={'empty'} />
-          <Box type={'empty'} />
-          <Box title={'Augmented Reality'} type={'black'}/>
-          <Box type={'gray'}/>
+          <div className={styles.marginControl}></div>
+          <Box title={"Augmented Reality"} type={"black"} />
+          <Box type={"gray"} />
         </div>
         <div>
-          <Box type={'gray'}/>
-          <Box title={'Mobile Applications'} type={'black'}/>
-          <Box title={'We make Technology more Human'} type={'empty'} />
-          <Box title={'Online Shops, Web&More'} type={'black'}/>
+          <Box type={"gray"} />
+          <Box title={"Mobile Applications"} type={"black"} />
+          <Box title={"We make Technology more Human"} type={"empty"} />
+          <Box title={"Online Shops, Web&More"} type={"black"} />
         </div>
       </main>
-
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

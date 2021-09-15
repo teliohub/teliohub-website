@@ -1,7 +1,55 @@
 .container {
-    height: 754px;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding-right: 0.7rem;
+  height: 784px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 0.7rem;
+  position: relative;
+}
+
+.marginControl {
+  margin-top: 310px;
+  z-index: 0;
+}
+
+.backgroundParaButton {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #181818;
+  border-radius: 50%;
+  padding-top: 10px;
+  z-index: 2000;
+  position: absolute;
+  top: 130px;
+  left: 13%;
+  transition: 2s ease-in-out;
+}
+
+.backgroundClicked {
+  background-color: white;
+  width: 140px;
+  height: 140px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #181818;
+  border-radius: 50%;
+  padding: 35px 20px 0 20px;
+  z-index: 2000;
+  position: absolute;
+  top: 580px;
+  left: 5%;
+  transition: 2s ease-in-out;
 }
