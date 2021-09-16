@@ -30,3 +30,25 @@
   z-index: 0;
   transition: 1s ease-in-out;
 }
+
+.whiteBall {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  top: 7.5rem;
+  left: 2.5rem;
+  transition: 1s ease-in-out;
+}
+
+.whiteBallMoving {
+  width: 6rem;
+  height: 6rem;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  top: 40.5rem;
+  left: 1.5rem;
+  transition: 1s ease-in-out;
+}

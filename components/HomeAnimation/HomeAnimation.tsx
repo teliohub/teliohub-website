@@ -10,6 +10,7 @@ const HomeAnimation = (props : Props) : JSX.Element => {
     return (
         <div className={props.isClicked ? styles.backgroundImageFullWidth : styles.backgroundImage}>
             <span>Want to see the stars?</span>
+            <div className={props.isClicked ? styles.whiteBallMoving : styles.whiteBall}></div>
         </div>
     )
 }

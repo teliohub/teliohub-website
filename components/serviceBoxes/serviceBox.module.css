@@ -1,0 +1,82 @@
+.container {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.container h1 {
+    font-size: 2.7rem;
+    font-weight: bolder;
+    color: #181818;
+}
+
+.divDivider {
+    width: 4rem;
+    height: 1rem;
+    border-top: 5px solid #181818;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.flexControl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5rem 0;
+    position: relative;
+}
+
+.spanPointer {
+    border-top: 2px dashed #181818;
+    height: 1px;
+    width: 80%;
+    position: absolute;
+    left: 0;
+}
+
+.spanPointerWidth {
+    width: 50%;
+    border-top: 2px dashed #181818;
+    height: 1px;
+    position: absolute;
+    left: 0;
+}
+
+.spanReady {
+    background-color: #181818;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spanReadyPosition {
+    background-color: #181818;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    right: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spanReady pre, .spanReadyPosition pre {
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: 900;
+}
+

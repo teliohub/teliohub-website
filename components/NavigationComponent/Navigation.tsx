@@ -53,7 +53,10 @@ const Navigation = () => {
         </li>
         <li className={styles.liControl}>
           <li>
-            <h4>{currentRoute}</h4>
+            {/* <h4>{currentRoute}</h4> */}
+            <Link href="/contact">
+              <a>Contact</a>
+            </Link>
           </li>
           <li>
             <Hamburger toggled={isNavSidebarActive} toggle={handleClick} />
