@@ -7,6 +7,15 @@
   position: relative;
 }
 
+.containerMargin {
+  margin: 3rem auto;
+  width: 90%;
+}
+
+.containerMargin h1 {
+  font-size: 40px;
+}
+
 .marginControl {
   margin-top: 310px;
   z-index: 0;
@@ -63,3 +72,11 @@
   opacity: 0;
   transition: 1s ease-in-out;
 }
+
+.lineBreak {
+    width: 4rem;
+    height: 1rem;
+    border-top: 5px solid #181818;
+    margin-bottom: 1rem;
+}
+

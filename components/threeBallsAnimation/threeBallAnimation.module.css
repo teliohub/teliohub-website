@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 200px;
+}
+
+.container:hover .secondBall {
+    left: 0rem;
+}
+
+.container:hover .thirdBall {
+    left: 0rem;
+}
+
+.firstBall {
+    background-image: url('../../public/assets/home/animationFirst/path-22.png');
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0rem;
+    top: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s ease-in-out;
+}
+
+.secondBall {
+    background-image: url('../../public/assets/home/animationFirst/Path-21.png');
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 8rem;
+    top: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s ease-in-out;
+}
+
+.thirdBall {
+    background-image: url('../../public/assets/home/animationFirst/path-20.png');
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 18rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s ease-in-out;
+}

@@ -6,6 +6,11 @@ import HomeAnimation from "../components/HomeAnimation/HomeAnimation";
 import styles from "../styles/pageStyles.module.css";
 import Texts from "../components/serviceBoxes/serviceBoxTexts";
 import ServiceBox from "../components/serviceBoxes/ServiceBox";
+import ThreeBallAnimation from "../components/threeBallsAnimation/threeBallAnimation";
+import ServiceContainer from "../components/ServicesContainers/ServiceContainer";
+
+import MobileAppsImage from "../public/assets/about/wordart.png";
+import serviceText from "../components/ServicesContainers/serviceText";
 
 const Home: NextPage = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
@@ -22,14 +27,20 @@ const Home: NextPage = () => {
         <HomeAnimation isClicked={isClicked} />
         <pre
           onClick={() => setIsClicked(true)}
-          className={isClicked ? styles.animationButtonClicked : styles.animationButton}
+          className={
+            isClicked ? styles.animationButtonClicked : styles.animationButton
+          }
         >
           {`
 Touch 
 here`}
         </pre>
-        <pre className={isClicked ? styles.starsTextActive : styles.starsTextNotActive}>
-        {`
+        <pre
+          className={
+            isClicked ? styles.starsTextActive : styles.starsTextNotActive
+          }
+        >
+          {`
           You,
        you are
        the star
@@ -59,6 +70,34 @@ here`}
         para={Texts[1].para}
         spanReady={Texts[1].spanReady}
       />
+      <div className={styles.containerMargin}>
+        <h1>Lets get down</h1>
+        <h1>to business</h1>
+        <div className={styles.lineBreak}></div>
+      </div>
+      <ThreeBallAnimation />
+      <ServiceContainer
+        imageUrl={MobileAppsImage}
+        title={serviceText[0].title}
+        para={serviceText[0].para}
+      />
+      <ThreeBallAnimation />
+      <ServiceContainer
+        imageUrl={MobileAppsImage}
+        title={serviceText[1].title}
+        para={serviceText[1].para}
+      />
+      <ThreeBallAnimation />
+      <ServiceContainer
+        imageUrl={MobileAppsImage}
+        title={serviceText[2].title}
+        para={serviceText[2].para}
+      />
+      <div className={styles.containerMargin}>
+        <h1>Where is</h1>
+        <h1>the magin?</h1>
+        <div className={styles.lineBreak}></div>
+      </div>
     </div>
   );
 };

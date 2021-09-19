@@ -8,6 +8,7 @@
   background-position: center;
   z-index: 0;
   transition: 1s ease-in-out;
+  background-repeat: no-repeat;
 }
 
 .backgroundImage span, .backgroundImageFullWidth span {
@@ -29,6 +30,7 @@
   background-position: center;
   z-index: 0;
   transition: 1s ease-in-out;
+  background-repeat: no-repeat;
 }
 
 .whiteBall {
