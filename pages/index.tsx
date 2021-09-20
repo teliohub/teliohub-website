@@ -12,6 +12,10 @@ import ServiceContainer from "../components/ServicesContainers/ServiceContainer"
 import MobileAppsImage from "../public/assets/about/wordart.png";
 import serviceText from "../components/ServicesContainers/serviceText";
 
+import MultipleRingsAnimation from "../components/multipleRingsAnimation/MultipleRingsAnimation";
+import DissapearingRings from "../components/dissapearingRings/DissapearingRings";
+import WhatIsHidden from "../components/whatIsHiddenBall/WhatIsHidden";
+
 const Home: NextPage = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
@@ -55,7 +59,7 @@ here`}
           <div>
             <Box type={"gray"} />
             <Box title={"Mobile Applications"} type={"black"} />
-            <Box title={"We make Technology more Human"} type={"empty"} />
+            <Box title={""} type={"empty"} />
             <Box title={"Online Shops, Web&More"} type={"black"} />
           </div>
         </main>
@@ -81,13 +85,13 @@ here`}
         title={serviceText[0].title}
         para={serviceText[0].para}
       />
-      <ThreeBallAnimation />
+      <MultipleRingsAnimation />
       <ServiceContainer
         imageUrl={MobileAppsImage}
         title={serviceText[1].title}
         para={serviceText[1].para}
       />
-      <ThreeBallAnimation />
+      <DissapearingRings />
       <ServiceContainer
         imageUrl={MobileAppsImage}
         title={serviceText[2].title}
@@ -98,6 +102,7 @@ here`}
         <h1>the magin?</h1>
         <div className={styles.lineBreak}></div>
       </div>
+      <WhatIsHidden />
     </div>
   );
 };

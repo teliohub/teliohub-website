@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./threeBallAnimation.module.css";
+import styles from "./dissapearingRings.module.css";
 
-const ThreeBallAnimation = (): JSX.Element => {
+const DissapearingRings = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <div className={styles.firstBall}></div>
@@ -11,4 +11,4 @@ const ThreeBallAnimation = (): JSX.Element => {
   );
 };
 
-export default ThreeBallAnimation;
+export default DissapearingRings;

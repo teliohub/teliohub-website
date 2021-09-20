@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 200px;
+}
+
+.container:hover .secondBall {
+    left: 1rem;
+    opacity: 0;
+}
+
+.container:hover .thirdBall {
+    left: 1rem;
+    opacity: 0;
+}
+
+.firstBall {
+    background-image: url('../../public/assets/home/animationThree/path-9.png');
+    width: 138px;
+    height: 138px;
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s ease-in-out;
+    background-size: contain;
+}
+
+.secondBall {
+    background-image: url('../../public/assets/home/animationThree/path-24.png');
+    width: 138px;
+    height: 138px;
+    position: absolute;
+    left: 10.5rem;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s ease-in-out;
+    background-size: contain;
+}
+
+.thirdBall {
+    background-image: url('../../public/assets/home/animationThree/path-23.png');
+    width: 138px;
+    height: 138px;
+    position: absolute;
+    left: 20rem;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s ease-in-out;
+    background-size: contain;
+}
