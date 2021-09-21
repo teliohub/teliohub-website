@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './contactPageForm.module.css'
+import styles from './contactPageForm.module.css';
 
 const ContactPageForm = (): JSX.Element => {
     const [pageIndex, setPageIndex] = useState<number>(0);

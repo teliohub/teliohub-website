@@ -11,17 +11,23 @@ const WhatIsHidden = (): JSX.Element => {
   const box6 = useRef(null);
   const box7 = useRef(null);
   const box8 = useRef(null);
-
+  const [isHover, setIsHover] = useState(false);
 
   const updateXarrow = useXarrow();
 
+
   useEffect(() => {
-        updateXarrow();
-  },[])
+    setInterval(() => updateXarrow(), 1)
+  }, [isHover]);
 
   return (
     <Xwrapper>
-      <div className={styles.mainBall}>
+      <div
+        className={styles.mainBall}
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+        onClick={() => setIsHover(!isHover)}
+      >
         <pre className={styles.mainBallText} ref={box1Ref}>
           {`Whats
 hidden?`}
@@ -39,30 +45,30 @@ requirements`}
           </pre>
         </div>
         <div onTransitionEnd={updateXarrow} className={styles.divThree}>
-        <pre ref={box4} id="elem4">
+          <pre ref={box4} id="elem4">
             {`Data
 Visualization`}
           </pre>
         </div>
         <div onTransitionEnd={updateXarrow} className={styles.divFour}>
-        <pre  ref={box5} id="elem5">
+          <pre ref={box5} id="elem5">
             {`Information
 Architecture`}
           </pre>
         </div>
         <div onTransitionEnd={updateXarrow} className={styles.divFive}>
-        <pre ref={box6} id="elem6">
+          <pre ref={box6} id="elem6">
             {`Technology
 Integration`}
           </pre>
         </div>
         <div onTransitionEnd={updateXarrow} className={styles.divSix}>
-        <pre ref={box7} id="elem7">
+          <pre ref={box7} id="elem7">
             {`Strategy`}
           </pre>
         </div>
         <div onDrag={updateXarrow} className={styles.divSeven}>
-        <pre ref={box8} id="elem8">
+          <pre ref={box8} id="elem8">
             {`Research`}
           </pre>
         </div>
