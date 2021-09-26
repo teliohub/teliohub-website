@@ -105,3 +105,29 @@
     background-position-x: 0;
     background-repeat: no-repeat;
 }
+
+.aboutProcessContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.5rem auto;
+}
+.aboutProcessContainer h1 {
+  font-size: 21px;
+}
+.aboutProcessContainer h2 {
+  font-size: 90px;
+  margin: 0rem;
+}
+
+.activeLineText {
+  width: 150px;
+  height: 5px;
+  background-color: #181818;
+  margin: 1rem 0;
+}
+
+.aboutMarginControl {
+  width: 90%;
+  margin: auto;
+}

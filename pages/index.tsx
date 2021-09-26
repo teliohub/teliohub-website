@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Box from "../components/BoxServices/BoxService";
 import HomeAnimation from "../components/HomeAnimation/HomeAnimation";
 import styles from "../styles/pageStyles.module.css";
@@ -18,6 +18,10 @@ import WhatIsHidden from "../components/whatIsHiddenBall/WhatIsHidden";
 
 const Home: NextPage = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
+  const myRef = useRef(null)
+
+  const scrollToRef = (ref: any) => window.scrollTo(0, ref.current.offsetTop);
+  const executeScroll = () => scrollToRef(myRef);
 
   return (
     <div>
@@ -63,7 +67,12 @@ here`}
             <Box title={"Online Shops, Web&More"} type={"black"} />
           </div>
         </main>
+        <div className={isClicked ? styles.absoluteLearnMoreClicked : styles.absoluteLearnMore}>
+          <span>Learn more</span>
+          <div onClick={executeScroll} className={styles.arrowRight}></div>
+        </div>
       </div>
+      <div className={styles.check} ref={myRef}></div>
       <ServiceBox
         title={Texts[0].title}
         para={Texts[0].para}
