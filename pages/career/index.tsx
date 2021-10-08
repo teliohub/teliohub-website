@@ -1,7 +1,7 @@
 import router from "next/router";
 import React from "react";
 import styles from "../../styles/career.module.css";
-import Texts from "./jobs";
+import Texts from "./jobs.json";
 import MultiBall from "../../components/MultipleBalls/MultiBall";
 
 const Career = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from 'next/router'
-import Jobs from './jobs'
+import Jobs from './jobs.json'
 import styles from '../../styles/career.module.css'
 
 const Name = (): JSX.Element => {
