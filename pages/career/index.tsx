@@ -26,7 +26,7 @@ const Career = () => {
       <div className={styles.openPositions}>
         {Jobs.map((item) => {
           return (
-              <div className={styles.position}>
+              <div key={item.title} className={styles.position}>
                 <div>
                   <h1>{item.title}</h1>
                   <p>{item.description}</p>
