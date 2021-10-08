@@ -109,8 +109,8 @@ const ContactPageForm = (): JSX.Element => {
     }
 
     return (
-        <React.Fragment key="contactPageFormKey">
-            <form className={styles.formControl} onSubmit={handleSubmit}>
+        <React.Fragment >
+            <form key="contactPageFormKey" className={styles.formControl} onSubmit={handleSubmit}>
                 {pages[pageIndex]}
             </form>
         </React.Fragment>
