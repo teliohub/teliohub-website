@@ -17,8 +17,8 @@ const Career = () => {
           <div></div>
           <div>
             <p>
-              Below you can see the open positions. If you don't see what you
-              are looking for, scroll down, we've got something for you.
+              Below you can see the open positions. If you don&apos;t see what you
+              are looking for, scroll down, we&apos;ve got something for you.
             </p>
           </div>
         </div>
@@ -26,7 +26,6 @@ const Career = () => {
       <div className={styles.openPositions}>
         {Jobs.map((item) => {
           return (
-            <React.Fragment>
               <div className={styles.position}>
                 <div>
                   <h1>{item.title}</h1>
@@ -34,7 +33,6 @@ const Career = () => {
                 </div>
                 <button onClick={() => router.push('/career/' + item.title)}><div className={styles.arrowRight}></div></button>
               </div>
-            </React.Fragment>
           );
         })}
       </div>
