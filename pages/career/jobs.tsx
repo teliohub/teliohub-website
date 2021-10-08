@@ -1,4 +1,4 @@
-const Jobs = [
+const jobs = [
     {
         'title' : 'design',
         'description' : 'UI/UX, Product designers and Web gurus'
@@ -9,4 +9,4 @@ const Jobs = [
     }
 ]
 
-export default Jobs
+export default jobs
