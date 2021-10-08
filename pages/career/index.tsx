@@ -1,7 +1,7 @@
 import router from "next/router";
 import React from "react";
 import styles from "../../styles/career.module.css";
-import jobs from "./jobs";
+import Texts from "./jobs";
 import MultiBall from "../../components/MultipleBalls/MultiBall";
 
 const Career = () => {
@@ -24,7 +24,7 @@ const Career = () => {
         </div>
       </div>
       <div className={styles.openPositions}>
-        {jobs.map((item) => {
+        {Texts.map((item) => {
           return (
               <div key={item.title} className={styles.position}>
                 <div>
