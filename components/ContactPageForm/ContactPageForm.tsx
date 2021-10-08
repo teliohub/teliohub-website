@@ -109,7 +109,7 @@ const ContactPageForm = (): JSX.Element => {
     }
 
     return (
-        <React.Fragment>
+        <React.Fragment key="contactPageFormKey">
             <form className={styles.formControl} onSubmit={handleSubmit}>
                 {pages[pageIndex]}
             </form>
