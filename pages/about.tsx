@@ -13,7 +13,8 @@ const About: NextPage = () => {
         <div className={styles.aboutMarginControl}>
         <div className={item.activeLine ? styles.activeLineText: ''}></div>
         <div className={styles.aboutProcessContainer}>
-          <div>
+          <div className={styles.flexRow}>
+            <div className={styles.zero}></div>
             <h2>{item.number}</h2>
           </div>
           <div>

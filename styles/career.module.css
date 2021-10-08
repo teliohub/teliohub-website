@@ -1,0 +1,85 @@
+.container {
+  width: 90%;
+  margin: 1rem auto 0;
+}
+
+.container h2 {
+    font-size: 30px;
+}
+
+.line {
+  width: 65px;
+  height: 5px;
+  background-color: #181818;
+  margin: 10px 0 20px;
+}
+.openPositions {
+    background-color: yellow;
+    width: 100%;
+}
+
+.openPositions div:nth-child(even) {
+    float: left;
+}
+
+.position {
+  background-color: #181818;
+  width: 90%;
+  float: right;
+  padding: 20px 30px;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.position h1 {
+    color: white;
+    text-transform: capitalize;
+}
+
+.position p {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.position button {
+    border: none;
+    background-color: #ececec;
+    color: white;
+    border-radius: 50%;
+    float: right;
+
+}
+
+.arrowRight {
+    position: relative;
+    padding: 5px;
+    background: #f7f7f7;
+    height: 50px;
+    width: 50px;
+    transition: all 0.2s linear;
+    border-radius: 50%;
+}
+
+.arrowRight::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  z-index: 11;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid rgb(46, 46, 46);
+  border-left: 2px solid rgb(29, 29, 29);
+  top: 16px;
+  transform: rotate(135deg);
+}
+
+.flexRow {
+    display: flex;
+}
+
+.marginTop {
+    margin-top: 5rem;
+}

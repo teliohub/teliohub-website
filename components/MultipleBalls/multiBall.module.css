@@ -1,0 +1,17 @@
+.flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.flexWrap div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #181818;
+}
+
+.black {
+    background-color: #181818;
+}

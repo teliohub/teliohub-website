@@ -24,7 +24,7 @@
 .animationButton {
   color: white;
   position: absolute;
-  top: 8rem;
+  top: 7.6rem;
   left: 1.5rem;
   z-index: 2922;
   color: #181818;;
@@ -40,7 +40,7 @@
 .animationButtonClicked {
   color: white;
   position: absolute;
-  top: 8rem;
+  top: 7.5rem;
   left: 2.5rem;
   z-index: 2922;
   color: #181818;;
@@ -55,7 +55,7 @@
 
 .starsTextActive {
   position: absolute;
-  top: 41.2rem;
+  bottom: 2.8rem;
   left: 1rem;
   font-weight: 900;
   font-size: 1rem;
@@ -65,7 +65,7 @@
 
 .starsTextNotActive {
   position: absolute;
-  top: 41.2rem;
+  bottom: 2.8rem;
   left: 1rem;
   font-weight: 900;
   font-size: 1rem;

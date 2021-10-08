@@ -2,17 +2,17 @@
   position: absolute;
   width: 30%;
   left: 0;
-  top: 10px;
-  height: 760px;
+  /* top: 10px; */
+  height: 100vh;
   background-image: url("../../public/assets/home/home.png");
-  background-position: center;
+  background-position: unset;
   z-index: 0;
   transition: 1s ease-in-out;
   background-repeat: no-repeat;
 }
 
 .backgroundImage span, .backgroundImageFullWidth span {
-    color: white;
+  color: white;
   margin: 50px 0 20px 10%;
   display: block;
   width: 100px;
@@ -24,10 +24,10 @@
   position: absolute;
   width: 100%;
   left: 0;
-  top: 10px;
-  height: 760px;
+  /* top: 10px; */
+  height: 100vh;
   background-image: url("../../public/assets/home/home.png");
-  background-position: center;
+  background-position: unset;
   z-index: 0;
   transition: 1s ease-in-out;
   background-repeat: no-repeat;
