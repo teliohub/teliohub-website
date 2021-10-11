@@ -1,6 +1,12 @@
 .container {
   width: 90%;
-  margin: 1rem auto 0;
+  margin: 3rem auto 0;
+}
+
+.container h1 {
+    font-weight: 900;
+    width: 100%;
+    font-size: 60px;
 }
 
 .container h2 {
@@ -16,10 +22,15 @@
 .openPositions {
     background-color: yellow;
     width: 100%;
+    margin: 2rem 0;
 }
 
 .openPositions div:nth-child(even) {
     float: left;
+}
+
+.position:last-child {
+    margin-bottom: 5rem;
 }
 
 .position {
@@ -82,4 +93,55 @@
 
 .marginTop {
     margin-top: 5rem;
+}
+
+.logoPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.body  {
+    -webkit-box-shadow: 10px 0px 13px -7px #000000, 13px -35px 14px -7px rgba(199,199,199,0.02); 
+    box-shadow: 10px 0px 13px -7px #000000, 13px -35px 14px -7px rgba(199,199,199,0.02);
+    height: 205px;
+    background-color: white;
+    padding-top: 20px;
+    z-index: 20;
+}
+
+.logoPage h1 {
+    font-size: 65px;
+    font-weight: bolder;
+    margin-left: -50px;
+    margin-top: 45px;
+    margin-left: -22px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: -5px;
+}
+
+.flexRow p {
+    line-height: 1.5rem;
+    font-size: 20px;
+    margin-top: calc(1rem - 5px);
+}
+
+.container p {
+    margin-bottom: 2rem;
 }

@@ -97,7 +97,7 @@
 
 .burger {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 30px 40px 30px 0;
   background-color: white;
 }

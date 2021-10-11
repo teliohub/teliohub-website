@@ -2,7 +2,7 @@
   height: 784px;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 0.7rem;
   position: relative;
 }

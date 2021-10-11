@@ -1,0 +1,190 @@
+.sack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: none;
+}
+
+.jobBallWhite {
+  width: 135px;
+  height: 135px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.jobBallBlack {
+  width: 135px;
+  height: 135px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: Black;
+}
+.jobBallBlack h2 {
+  font-size: 22px;
+  color: white;
+}
+.jobBallBlack:nth-child(1) {
+  z-index: 1;
+}
+.jobBallBlack:nth-child(2) {
+  z-index: 3;
+}
+.jobBallBlack:nth-child(3) {
+  z-index: 2;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+.jobBallWhite:nth-child(1) {
+  z-index: 1;
+}
+
+.jobBallWhite:nth-child(2) {
+  z-index: 3;
+}
+
+.jobBallWhite:nth-child(3) {
+  margin-top: -50px;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+.jobBallWhite h2 {
+  font-size: 22px;
+}
+
+.line {
+  width: 65px;
+  height: 5px;
+  background-color: #181818;
+  margin: 10px 0 20px;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.expDIV span {
+  margin: 10px 15px 10px 0;
+  padding: 5px 8px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 30px;
+  display: inline-block;
+  border: 1px solid #181818;
+}
+.blackSpan {
+  background-color: #181818;
+  color: white;
+}
+
+.radioButtons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.radioButtons div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.radioButtons input[type="radio"] {
+  margin: 10px 10px 10px 0;
+  height: 2em;
+  width: 2em;
+  color: #181818;
+}
+
+.radioButtons input[type="radio"]:checked:after {
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  top: 3.5px;
+  left: 3px;
+  position: relative;
+  background-color: #181818;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.flexRow h4 {
+  font-size: 22px;
+}
+
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 160px; /* Full-width */
+  height: 2px; /* Specified height */
+  background: #181818; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #181818;
+  background: white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid #181818;
+  background: white;
+  cursor: pointer;
+}
+
+.slidersBox {
+  margin-bottom: 50px;
+}
+
+.textAreaWidthControl {
+    width: 90%;
+    margin: 0 auto 50px;
+}
+
+.textAreaControl {
+    width: 100%;
+    padding: 30px;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 3px 6px 14px 0px #a6acad;
+  box-shadow: 3px 6px 14px 0px #a6acad;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: vertical;
+}
