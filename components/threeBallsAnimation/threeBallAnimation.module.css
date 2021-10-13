@@ -7,6 +7,18 @@
     height: 200px;
 }
 
+/* viewport active */
+
+.active .secondBall {
+    left: 0rem;
+}
+
+.active .thirdBall {
+    left: 0;
+}
+
+/*  */
+
 .container:hover .secondBall {
     left: 0rem;
 }

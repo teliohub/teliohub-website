@@ -7,6 +7,15 @@
     height: 200px;
 }
 
+/* viewport active */
+
+.active .secondBall, .active .thirdBall {
+    left: 1rem;
+    opacity: 0;
+}
+
+/*  */
+
 .container:hover .secondBall {
     left: 1rem;
     opacity: 0;

@@ -27,6 +27,30 @@
     left: 1.3rem;
 }
 
+/* active class in viewport */
+
+.active .secondBall {
+    left: 1rem;
+}
+
+.active .thirdBall {
+    left: 1rem;
+}
+
+.active .fourthBall {
+    left: 1.1rem;
+}
+
+.active .fifthBall {
+    left: 1.2rem;
+}
+
+.active .sixthBall {
+    left: 1.3rem;
+}
+
+/*  */
+
 
 .firstBall {
     border: 2px solid black;

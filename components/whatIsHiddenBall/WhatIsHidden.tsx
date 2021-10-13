@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import styles from "./whatIsHidden.module.css";
-import Xarrow, { useXarrow, Xwrapper } from "react-xarrows";
+import { InView } from 'react-intersection-observer';
 
 const WhatIsHidden = (): JSX.Element => {
   const box1Ref = useRef(null);
@@ -13,152 +13,62 @@ const WhatIsHidden = (): JSX.Element => {
   const box8 = useRef(null);
   const [isHover, setIsHover] = useState(false);
 
-  const updateXarrow = useXarrow();
-
-
-  useEffect(() => {
-    setInterval(() => updateXarrow(), 1)
-  }, [isHover]);
+  const [inViewPort, setInView] = React.useState(false)
 
   return (
-    <Xwrapper>
+    <InView onChange={setInView}>
       <div
-        className={styles.mainBall}
-        onMouseEnter={() => setIsHover(true)}
-        onMouseLeave={() => setIsHover(false)}
-        onClick={() => setIsHover(!isHover)}
+        className={inViewPort ? `${styles.mainBall} ${styles.activeBalls}` : `${styles.mainBall}`}
       >
         <pre className={styles.mainBallText} ref={box1Ref}>
           {`Whats
 hidden?`}
         </pre>
-        <div onDrag={updateXarrow} className={styles.divOne}>
+        <div className={styles.divOne}>
           <pre ref={box2} id="elem2">
             {`Connecting
 the dots`}
           </pre>
         </div>
-        <div onTransitionEnd={updateXarrow} className={styles.divTwo}>
+        <div className={styles.divTwo}>
           <pre ref={box3} id="elem3">
             {`Product
 requirements`}
           </pre>
         </div>
-        <div onTransitionEnd={updateXarrow} className={styles.divThree}>
+        <div className={styles.divThree}>
           <pre ref={box4} id="elem4">
             {`Data
 Visualization`}
           </pre>
         </div>
-        <div onTransitionEnd={updateXarrow} className={styles.divFour}>
+        <div className={styles.divFour}>
           <pre ref={box5} id="elem5">
             {`Information
 Architecture`}
           </pre>
+          
         </div>
-        <div onTransitionEnd={updateXarrow} className={styles.divFive}>
+        <div className={styles.divFive}>
           <pre ref={box6} id="elem6">
             {`Technology
 Integration`}
           </pre>
         </div>
-        <div onTransitionEnd={updateXarrow} className={styles.divSix}>
+        <div className={styles.divSix}>
           <pre ref={box7} id="elem7">
             {`Strategy`}
           </pre>
         </div>
-        <div onDrag={updateXarrow} className={styles.divSeven}>
+        <div className={styles.divSeven}>
           <pre ref={box8} id="elem8">
             {`Research`}
           </pre>
         </div>
 
-        <Xarrow
-          start={box1Ref} //can be react ref
-          end={box2} //or an id
-          curveness={0}
-          dashness={true}
-          showHead={true}
-          headShape="circle"
-          headSize={3}
-          color="#181818"
-          startAnchor="middle"
-          endAnchor="bottom"
-        />
-        <Xarrow
-          start={box1Ref} //can be react ref
-          end={box3} //or an id
-          curveness={0}
-          dashness={true}
-          showHead={true}
-          headShape="circle"
-          headSize={3}
-          color="#181818"
-          startAnchor="middle"
-          endAnchor="bottom"
-        />
-        <Xarrow
-          start={box1Ref} //can be react ref
-          end={box4} //or an id
-          curveness={0}
-          dashness={true}
-          showHead={true}
-          headShape="circle"
-          headSize={3}
-          color="#181818"
-          startAnchor="middle"
-          endAnchor="bottom"
-        />
-        <Xarrow
-          start={box1Ref} //can be react ref
-          end={box5} //or an id
-          curveness={0}
-          dashness={true}
-          showHead={true}
-          headShape="circle"
-          headSize={3}
-          color="#181818"
-          startAnchor="middle"
-          endAnchor="top"
-        />
-        <Xarrow
-          start={box1Ref} //can be react ref
-          end={box6} //or an id
-          curveness={0}
-          dashness={true}
-          showHead={true}
-          headShape="circle"
-          headSize={3}
-          color="#181818"
-          startAnchor="middle"
-          endAnchor="top"
-        />
-        <Xarrow
-          start={box1Ref} //can be react ref
-          end={box7} //or an id
-          curveness={0}
-          dashness={true}
-          showHead={true}
-          headShape="circle"
-          headSize={3}
-          color="#181818"
-          startAnchor="middle"
-          endAnchor="top"
-        />
-        <Xarrow
-          start={box1Ref} //can be react ref
-          end={box8} //or an id
-          curveness={0}
-          dashness={true}
-          showHead={true}
-          headShape="circle"
-          headSize={3}
-          color="#181818"
-          startAnchor="middle"
-          endAnchor="top"
-        />
+        
       </div>
-    </Xwrapper>
+    </InView>
   );
 };
 
