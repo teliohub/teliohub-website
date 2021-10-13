@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import styles from "./multipleRingsAnimation.module.css";
 import { InView } from 'react-intersection-observer';
 
-const multipleRingsAnimation = (): JSX.Element => {
-
+const MultipleRingsAnimation = (): JSX.Element => {
   const [inViewPort, setInView] = useState(false)
+
   
   return (
     <InView onChange={setInView}>
@@ -20,4 +20,4 @@ const multipleRingsAnimation = (): JSX.Element => {
   );
 };
 
-export default multipleRingsAnimation;
+export default MultipleRingsAnimation;
