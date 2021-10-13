@@ -13,7 +13,7 @@ const WhatIsHidden = (): JSX.Element => {
   const box8 = useRef(null);
   const [isHover, setIsHover] = useState(false);
 
-  const [inViewPort, setInView] = React.useState(false)
+  const [inViewPort, setInView] = useState(false)
 
   return (
     <InView onChange={setInView}>

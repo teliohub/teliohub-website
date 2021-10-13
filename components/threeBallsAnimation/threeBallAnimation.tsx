@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./threeBallAnimation.module.css";
 import { InView } from "react-intersection-observer";
 
 const ThreeBallAnimation = (): JSX.Element => {
-  const [inViewPort, setInView] = React.useState(false);
+  const [inViewPort, setInView] = useState(false);
 
   return (
     <InView onChange={setInView}>

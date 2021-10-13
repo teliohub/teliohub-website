@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./multipleRingsAnimation.module.css";
 import { InView } from 'react-intersection-observer';
 
 const multipleRingsAnimation = (): JSX.Element => {
 
-  const [inViewPort, setInView] = React.useState(false)
+  const [inViewPort, setInView] = useState(false)
   
   return (
     <InView onChange={setInView}>
