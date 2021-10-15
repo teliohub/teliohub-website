@@ -55,14 +55,26 @@
 
 .services p {
   margin: 20px 0;
-  line-height: 25px;
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #181818;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   font-family: Montserrat;
   letter-spacing: normal;
+  height: 75px;
+}
+
+.spanBackgroundColor {
+  background-color: #f9f9f9;
+  font-size: 1.2rem;
+  color: #181818;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-family: Montserrat;
+  letter-spacing: normal;
+  max-height: 75px !important;
 }
 
 .services div {
@@ -148,4 +160,40 @@
 .aboutMarginControl {
   width: 90%;
   margin: auto;
+}
+
+.dashedContainerBorder {
+  width: 50px;
+  height: 330px;
+  border-top: 2px dashed #858585;;
+  border-right: 2px dashed #858585;;
+  position: absolute;
+  left: 250px;
+  top: 55px;
+}
+
+.dashedContainerBorderTwo {
+  width: 215px;
+  height: 10px;
+  border-bottom: 2px dashed #858585;
+  position: absolute;
+  left: 86px;
+  top: -100px;
+}
+
+.dashedContainerBorderThree {
+  width: 2px;
+  height: 200px;
+  border-left: 2px dashed #858585;
+  position: absolute;
+  left: 85px;
+  top: -50px;
+}
+
+.marginTop {
+  margin-top: 100px;
+}
+
+.marginBottom {
+  margin-bottom: 70px;
 }

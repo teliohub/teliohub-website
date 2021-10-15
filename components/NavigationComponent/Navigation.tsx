@@ -37,11 +37,11 @@ const Navigation = () => {
       replacingArray[0] = true;
       setIsRouteActive(replacingArray);
     }
-  }, []);
+  }, [currentRoute]);
 
   return (
     <React.Fragment>
-      <ul className={styles.container}>
+      <ul className={isNavSidebarActive ? `${styles.container} ${styles.fixContainer}` : styles.container}>
         <li>
           <Link href="/">
             <Image

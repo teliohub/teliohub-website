@@ -4,9 +4,11 @@
 }
 
 .container h1 {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     color: #181818;
+    font-family: Montserrat;
+    font-weight: 900;
 }
 
 .divDivider {

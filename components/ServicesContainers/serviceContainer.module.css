@@ -4,5 +4,20 @@
 }
 
 .imageControl {
-    width: 130px;
+    display: flex;
+    margin: 50px 0 0px 0;
+    align-items: center;
+}
+
+.imageControl h1 {
+    margin-left: -15px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Montserrat;
+}
+
+.container h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: normal;
 }
