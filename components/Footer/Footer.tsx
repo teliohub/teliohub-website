@@ -35,7 +35,7 @@ const Footer = (): JSX.Element => {
           </p>
         </li>
         <li className={styles.liFlexBetweenDesign}>
-          <Link href="/news">
+          <Link href="/stories">
             <a
               className={menuPosition === 2 ? "" : styles.changeOpacity}
               onClick={() => handleRouteChange(2)}

@@ -81,8 +81,8 @@ const Navigation = () => {
           </li>
           <li>
             <div className={isRouteActive[2] ? styles.routeActive : ""}></div>
-            <Link href="/news">
-              <a onClick={() => handleRouteChange("News", 2)}>News</a>
+            <Link href="/stories">
+              <a onClick={() => handleRouteChange("Stories", 2)}>Stories</a>
             </Link>
           </li>
           <li>
