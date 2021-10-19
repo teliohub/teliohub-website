@@ -30,7 +30,7 @@ const Navigation = () => {
   };
 
   useEffect(() => {
-    setCurrentRoute(window.location.pathname.replace(/\//, ""));
+    // setCurrentRoute(window.location.pathname.replace(/\//, ""));
     if (currentRoute === "" || currentRoute === undefined) {
       setCurrentRoute("Home");
       let replacingArray = [false, false, false, false, false, false];
