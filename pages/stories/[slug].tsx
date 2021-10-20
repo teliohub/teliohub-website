@@ -2,12 +2,13 @@ import React from "react";
 import axios, { AxiosResponse } from "axios";
 
 const Story = ({article}: any) => {
-    console.log(article)
+    console.log(process.env.herokuConnect)
  return (
      <div>
          <br />
          <br />
          <div>{article.Title}</div>
+         <div >{article.Content}</div>
      </div>
  )
 };
@@ -15,7 +16,7 @@ const Story = ({article}: any) => {
 export default Story;
 
 export async function getStaticPaths() {
-  const res = await axios.get("http://localhost:1337/articles");
+  const res = await axios.get(`${process.env.HEROKU_CONNECTION_API}/articles`);
   const articles: any = await res.data;
 
   const paths = articles.map((article: any) => ({
@@ -31,7 +32,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: any) {
   const { slug } = params;
 
-  const res = await axios.get(`http://localhost:1337/articles?Slug=${slug}`);
+  const res = await axios.get(`${process.env.HEROKU_CONNECTION_API}/articles?Slug=${slug}`);
   const data: any = await res.data;
 
   const article = data[0];
