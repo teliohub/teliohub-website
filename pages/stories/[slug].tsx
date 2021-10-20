@@ -1,14 +1,14 @@
 import React from "react";
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 
 const Story = ({article}: any) => {
-    console.log(process.env.herokuConnect)
+    
  return (
      <div>
          <br />
          <br />
-         <div>{article.Title}</div>
-         <div >{article.Content}</div>
+         <div>{article?.Title}</div>
+         <div >{article?.Content}</div>
      </div>
  )
 };
