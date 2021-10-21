@@ -48,6 +48,7 @@ export default Stories;
 
 export async function getStaticProps() {
   const res = await axios.get(`${process.env.HEROKU_CONNECTION_API}/articles`);
+  // const res = await axios.get(`http://localhost:1337/articles`);
   const articles = await res.data;
 
   return {

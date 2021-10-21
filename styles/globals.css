@@ -22,3 +22,45 @@ a {
 body {
   background-color: #f9f9f9;
 }
+
+/* global styles for the slug articles */
+
+.content-slug {
+  margin-top: 50px;
+}
+
+.line-slug {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 1rem 0;
+}
+
+.mainBlock-slug {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexColumn-slug {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.flexColumn-slug h5 {
+  margin: 10px 0;
+  color:#f84463;
+  font-size: 20px;
+  font-family: Montserrat;
+}
+
+.flexColumn-slug span {
+  display: block;
+  font-size: 18px;
+  line-height: 1.22em;
+  font-weight: 500;
+  font-stretch: normal;
+  font-family: Montserrat;
+}
+
+/* global styles for the slug articles */

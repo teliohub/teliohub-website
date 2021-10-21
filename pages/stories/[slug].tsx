@@ -1,22 +1,24 @@
 import React from "react";
 import axios from "axios";
+import styles from "./slug.module.css";
 
-const Story = ({article}: any) => {
-    
- return (
-     <div>
-         <br />
-         <br />
-         <div>{article?.Title}</div>
-         <div >{article?.Content}</div>
-     </div>
- )
+const Story = ({ article }: any) => {
+  return (
+    <div className={styles.slugPost}>
+      <br />
+      <br />
+      <div>{article?.Title}</div>
+      <div dangerouslySetInnerHTML={{__html: article?.Content}} />
+      
+    </div>
+  );
 };
 
 export default Story;
 
 export async function getStaticPaths() {
   const res = await axios.get(`${process.env.HEROKU_CONNECTION_API}/articles`);
+  // const res = await axios.get(`http://localhost:1337/articles`);
   const articles: any = await res.data;
 
   const paths = articles.map((article: any) => ({
@@ -33,6 +35,7 @@ export async function getStaticProps({ params }: any) {
   const { slug } = params;
 
   const res = await axios.get(`${process.env.HEROKU_CONNECTION_API}/articles?Slug=${slug}`);
+  // const res = await axios.get(`http://localhost:1337/articles?Slug=${slug}`);
   const data: any = await res.data;
 
   const article = data[0];
