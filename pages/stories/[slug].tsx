@@ -34,8 +34,8 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: any) {
   const { slug } = params;
 
-  // const res = await axios.get(`${process.env.HEROKU_CONNECTION_API}/articles?Slug=${slug}`);
-  const res = await axios.get(`http://localhost:1337/articles?Slug=${slug}`);
+  const res = await axios.get(`${process.env.HEROKU_CONNECTION_API}/articles?Slug=${slug}`);
+  // const res = await axios.get(`http://localhost:1337/articles?Slug=${slug}`);
   const data: any = await res.data;
 
   const article = data[0];
