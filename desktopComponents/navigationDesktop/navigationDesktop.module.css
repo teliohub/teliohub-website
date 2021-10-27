@@ -1,0 +1,21 @@
+.container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+  }
+
+.container nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.container nav ul li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+.container a {
+    text-decoration: none;
+}

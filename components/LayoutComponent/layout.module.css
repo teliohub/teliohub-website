@@ -4,3 +4,9 @@
     width: 100%;
     overflow: hidden;
 }
+
+@media (min-width: 900px) {
+    .layout {
+        margin: 0;
+    }
+}

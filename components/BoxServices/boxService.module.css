@@ -59,3 +59,16 @@
     display: none;
     z-index: 200;
 }
+
+@media (min-width: 900px) {
+    .box {
+        width: 180px;
+        height: 180px;
+        z-index: 20;
+    }
+
+    .emptyBox {
+        width: 180px;
+        height: 180px;
+    }
+}

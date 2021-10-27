@@ -1,0 +1,96 @@
+.container {
+  margin: 6rem 0;
+  width: 100%;
+}
+
+.line {
+  width: 65px;
+  height: 5px;
+  background-color: #181818;
+  margin: 10px 0 3rem;
+}
+
+.flexRow {
+  display: flex;
+  position: relative;
+}
+
+.justifyCenter {
+  justify-content: space-between;
+}
+
+.alignItems {
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.flexRow span {
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 25px;
+  padding: 8%;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  background-color: #181818;
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spanOne{
+padding: 8%;
+  position: absolute;
+  right: 0;
+}
+.spanTwo{
+      position: absolute;
+      right: 30%;
+    }
+.pointer {
+  height: 3px;
+  border-top: 4px dashed #181818;
+}
+
+.widthPointerOne {
+  width: 60%;
+}
+
+.widthPointerTwo {
+  width: 30%;
+}
+
+.mainContentContainer {
+  width: 40%;
+}
+
+.container h1 {
+  font-family: Montserrat;
+  font-size: 70px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+
+.mainContentContainer p {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}

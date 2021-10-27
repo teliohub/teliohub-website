@@ -136,3 +136,25 @@ border-left: 2px solid #fff;
 top: 10px;
 transform: rotate(225deg);
 }
+
+@media (min-width: 500px) {
+  .absoluteLearnMore {
+    color: white;
+  }
+}
+
+@media (min-width: 900px) {
+  .marginControl {
+    margin-top: 360px;
+  }
+
+  .flexControlTop {
+    display: flex;
+    padding: 10px 15%;
+    align-items: center;
+  }
+
+  .absoluteLearnMore {
+    color: white;
+  }
+}
