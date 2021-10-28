@@ -19,6 +19,9 @@ import DissapearingRings from "../components/dissapearingRings/DissapearingRings
 import WhatIsHidden from "../components/whatIsHiddenBall/WhatIsHidden";
 
 import HomeIntroText from "../desktopComponents/homeIntroText/HomeIntroText";
+import MobileService from "../desktopComponents/homePageServiceTexts/MobileService";
+import AugmentedRealityService from "../desktopComponents/homePageServiceTexts/AugmentedService";
+import OnlineShopService from "../desktopComponents/homePageServiceTexts/OnlineShopService";
 
 const Home: NextPage = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
@@ -135,28 +138,47 @@ here`}
         <div className={styles.lineBreak}></div>
       </div>
       <div className={styles.flexControlTop}>
-        <ThreeBallAnimation />
-        <ServiceContainer
-          imageText={serviceText[0].imageText}
-          imageUrl={MobileAppsImage}
-          title={serviceText[0].title}
-          para={serviceText[0].para}
-        />
+        {typeof mobile !== undefined && mobile ? (
+          <div>
+            <ThreeBallAnimation />
+            <ServiceContainer
+              imageText={serviceText[0].imageText}
+              imageUrl={MobileAppsImage}
+              title={serviceText[0].title}
+              para={serviceText[0].para}
+            />
+          </div>
+        ) : (
+          <MobileService />
+        )}
       </div>
-      <MultipleRingsAnimation />
-      <ServiceContainer
-        imageText={serviceText[1].imageText}
-        imageUrl={AugmentedRealityImage}
-        title={serviceText[1].title}
-        para={serviceText[1].para}
-      />
-      <DissapearingRings />
-      <ServiceContainer
-        imageText={serviceText[2].imageText}
-        imageUrl={OnlineShopImage}
-        title={serviceText[2].title}
-        para={serviceText[2].para}
-      />
+      {typeof mobile !== undefined && mobile ? (
+        <div>
+          <MultipleRingsAnimation />
+          <ServiceContainer
+            imageText={serviceText[1].imageText}
+            imageUrl={AugmentedRealityImage}
+            title={serviceText[1].title}
+            para={serviceText[1].para}
+          />
+        </div>
+      ) : (
+        <AugmentedRealityService />
+      )}
+      {typeof mobile !== undefined && mobile ? (
+        <div>
+          <DissapearingRings />
+          <ServiceContainer
+            imageText={serviceText[2].imageText}
+            imageUrl={OnlineShopImage}
+            title={serviceText[2].title}
+            para={serviceText[2].para}
+          />
+        </div>
+      ) : (
+        <OnlineShopService />
+      )}
+
       <div className={styles.containerMargin}>
         <h1>Where is</h1>
         <h1>the magic?</h1>

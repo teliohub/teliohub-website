@@ -39,6 +39,31 @@
     background-color: #181818;
     color: white;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+@media (min-width: 900px ) {
+    .footerControl {
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .liFlexBetweenDesign a{
+        color: white;
+    }
+
+    .desktopControl {
+        width: 50%;
+        margin: auto;
+    }
+
+    .footerEndTitles {
+        position: absolute;
+        bottom: 20px;
+        right: 45%;
+    }
 }
 
 .footerControl h2, .footerControl h3 {

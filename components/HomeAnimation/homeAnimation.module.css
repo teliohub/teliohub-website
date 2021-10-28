@@ -61,7 +61,7 @@
     left: 0;
     height: 800px;
     background-size: cover;
-    background-image: url("../../public/assets/home/starts.webp");
+    background-image: url("../../public/assets/home/home-desktop.webp");
     background-position: center;
   }
 
@@ -72,7 +72,7 @@
   background-position: center;
   background-size: cover;
   z-index: 0;
-  background-image: url("../../public/assets/home/starts.webp");
+  background-image: url("../../public/assets/home/home-desktop.webp");
   transition: 1s ease-in-out;
   background-repeat: no-repeat;
   }

@@ -51,6 +51,33 @@
 
 /*  */
 
+@media (min-width: 900px) {
+
+    .container {
+        margin: 50px 0;
+    }
+
+.active .secondBall {
+    left: 2.5rem;
+}
+
+.active .thirdBall {
+    left: 4.9rem;
+}
+
+.active .fourthBall {
+    left: 8.2rem;
+}
+
+.active .fifthBall {
+    left: 12.8rem;
+}
+
+.active .sixthBall {
+    left: 18.3rem;
+}
+}
+
 
 .firstBall {
     border: 2px solid black;

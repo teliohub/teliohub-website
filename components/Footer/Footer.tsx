@@ -99,15 +99,19 @@ const Footer = (): JSX.Element => {
           </p>
         </li>
       </ul>
-      <h2>Let&apos;s collaborate</h2>
-      <h3 className={styles.changeOpacity}>ouremail@gmail.com</h3>
-      <div className={styles.brands}>
-        <FontAwesomeIcon icon={faDribbble} />
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faLinkedin} />
+      <div className={styles.desktopControl}>
+        <h2>Let&apos;s collaborate</h2>
+        <h3 className={styles.changeOpacity}>ouremail@gmail.com</h3>
+        <div className={styles.brands}>
+          <FontAwesomeIcon icon={faDribbble} />
+          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={faLinkedin} />
+        </div>
       </div>
       <div className={styles.footerEndTitles}>
-        <span className={styles.copy}>&copy; TIE {new Date().getFullYear()}</span>
+        <span className={styles.copy}>
+          &copy; TIE {new Date().getFullYear()}
+        </span>
         <span className={styles.privacy}>Privacy Policy</span>
       </div>
     </footer>

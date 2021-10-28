@@ -61,3 +61,15 @@
     background-position: center;
     transition: 1s ease-in-out;
 }
+
+@media ( min-width: 900px ){
+
+    .active .secondBall {
+        left: 7rem;
+    }
+    
+    .active .thirdBall {
+        left: 16rem;
+    }
+ 
+}
