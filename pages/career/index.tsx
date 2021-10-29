@@ -7,9 +7,11 @@ import Image from "next/image";
 import image from "../../public/assets/career/careerBanner.webp";
 import CareerForm from "../../components/careerForm/CareerForm";
 
+import { motion } from "framer-motion";
+
 const Career = () => {
   return (
-    <div>
+    <motion.div exit={{opacity: 0}}>
       <div className={styles.logoPage}>
         <div className={styles.body}>
         <Image
@@ -77,7 +79,7 @@ const Career = () => {
         <div className={styles.line}></div>
         <CareerForm />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

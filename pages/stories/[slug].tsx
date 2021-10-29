@@ -2,15 +2,17 @@ import React from "react";
 import axios from "axios";
 import styles from "./slug.module.css";
 
+import { motion } from "framer-motion";
+
 const Story = ({ article }: any) => {
   return (
-    <div className={styles.slugPost}>
+    <motion.div exit={{opacity: 0}} className={styles.slugPost}>
       <br />
       <br />
       <div>{article?.Title}</div>
       <div dangerouslySetInnerHTML={{__html: article?.Content}} />
       
-    </div>
+    </motion.div>
   );
 };
 

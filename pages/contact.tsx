@@ -4,13 +4,14 @@ import Image from 'next/image'
 import styles from '../styles/contact.module.css'
 
 import image from '../public/assets/wordart.png';
+import { motion } from 'framer-motion';
 
 
 const Contact = () => {
 
 
     return (
-        <React.Fragment>
+        <motion.div exit={{opacity: 0}}>
             <div className={styles.body}>
                 <div className={styles.logoPage}>
                     <Image src={image} className={styles.imageControl} alt="Contact logo page" />
@@ -18,7 +19,7 @@ const Contact = () => {
                 </div>
                 <ContactPageForm />
             </div>
-        </React.Fragment>
+        </motion.div>
     )
 }
 

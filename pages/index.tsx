@@ -23,6 +23,8 @@ import MobileService from "../desktopComponents/homePageServiceTexts/MobileServi
 import AugmentedRealityService from "../desktopComponents/homePageServiceTexts/AugmentedService";
 import OnlineShopService from "../desktopComponents/homePageServiceTexts/OnlineShopService";
 
+import { motion } from "framer-motion";
+
 const Home: NextPage = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
   const [mobile, setMobile] = useState<any>();
@@ -45,7 +47,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div>
+    <motion.div exit={{opacity: 0}} initial="initial" animate="animate">
       <div className={styles.container}>
         <Head>
           <title>Create Next App</title>
@@ -185,7 +187,7 @@ here`}
         <div className={styles.lineBreak}></div>
       </div>
       <WhatIsHidden />
-    </div>
+    </motion.div>
   );
 };
 

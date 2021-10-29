@@ -4,6 +4,7 @@ import image from "../public/assets/about/wordart.png";
 import styles from "../styles/about.module.css";
 
 import AboutProcessText from "../components/aboutOurProcess/AboutProcessText";
+import { motion } from "framer-motion";
 
 const About: NextPage = () => {
   const renderAboutProcessTexts = () => {
@@ -30,7 +31,7 @@ const About: NextPage = () => {
   };
 
   return (
-    <div>
+    <motion.div exit={{opacity: 0}}>
       <div className={styles.logoPage}>
         <Image
           src={image}
@@ -88,7 +89,7 @@ const About: NextPage = () => {
       <div className={`${styles.container} ${styles.marginBottom}`}>
         <div className={styles.line}></div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

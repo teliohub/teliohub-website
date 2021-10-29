@@ -1,6 +1,11 @@
+import React from "react";
+import { motion } from "framer-motion";
+
 const Industries = () => {
     return (
-        <h1>Industries page</h1>
+        <motion.div exit={{opacity: 0}}>
+            <h1>Industries</h1>
+        </motion.div>
     )
 }
 

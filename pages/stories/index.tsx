@@ -3,9 +3,11 @@ import Link from "next/link";
 import React from "react";
 import styles from "../../styles/stories.module.css";
 
+import { motion } from "framer-motion";
+
 const Stories = ({ articles }: any): JSX.Element => {
   return (
-    <div className={styles.container}>
+    <motion.div exit={{opacity: 0}} className={styles.container}>
       <div className={styles.logo}></div>
       <div className={styles.planet}></div>
       <br />
@@ -40,7 +42,7 @@ const Stories = ({ articles }: any): JSX.Element => {
       <div className={styles.line}></div>
       <br />
       <br />
-    </div>
+    </motion.div>
   );
 };
 
