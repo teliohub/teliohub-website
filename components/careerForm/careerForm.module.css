@@ -6,6 +6,13 @@
   flex-shrink: none;
 }
 
+@media ( min-width: 900px ){
+  .sack {
+    width: 400px;
+    margin: auto;
+  }
+}
+
 .jobBallWhite {
   width: 135px;
   height: 135px;

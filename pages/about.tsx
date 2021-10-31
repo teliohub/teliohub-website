@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 
 const About: NextPage = () => {
   const renderAboutProcessTexts = () => {
-    console.log(AboutProcessText);
     return AboutProcessText.map((item) => (
       <>
         <div className={styles.aboutMarginControl}>

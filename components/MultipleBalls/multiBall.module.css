@@ -5,6 +5,12 @@
     margin: 2rem auto;
 }
 
+@media (min-width: 900px) {
+    .flexWrap {
+        width: 350px;
+    }
+}
+
 .flexWrap div {
     width: 60px;
     height: 60px;

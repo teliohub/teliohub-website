@@ -26,6 +26,18 @@
   position: relative;
 }
 
+@media (min-width: 900px) {
+  .logoPage {
+    justify-content: unset;
+    margin-left: 200px;
+    margin-top: -15px;
+  }
+  .container, .aboutMarginControl {
+    width: 600px !important;
+  }
+  
+}
+
 .flexRow {
   display: flex;
   align-items: center;

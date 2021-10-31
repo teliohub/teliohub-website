@@ -4,6 +4,14 @@
     justify-content: center;
 }
 
+@media (min-width: 900px) {
+    .logoPage {
+        justify-content: unset;
+        margin-left: 200px;
+        margin-top: -15px;
+    }
+}
+
 .body img {
     margin-top: 0px !important;
     transform: translateY(-10px);

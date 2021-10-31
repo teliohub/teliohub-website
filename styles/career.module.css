@@ -3,6 +3,21 @@
   margin: 3rem auto 0;
 }
 
+@media (min-width: 900px){
+    .container {
+        width: 600px;
+    }
+    .logoPage {
+        justify-content: unset !important;
+        margin-left: 200px;
+    }
+    .openPositions {
+        width: 600px !important;
+        margin: auto !important;
+    }
+
+}
+
 .container h1 {
     font-weight: 900;
     width: 100%;

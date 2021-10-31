@@ -7,41 +7,43 @@ import { motion } from "framer-motion";
 
 const Stories = ({ articles }: any): JSX.Element => {
   return (
-    <motion.div exit={{opacity: 0}} className={styles.container}>
+    <motion.div exit={{ opacity: 0 }} className={styles.container}>
       <div className={styles.logo}></div>
-      <div className={styles.planet}></div>
-      <br />
-      <br />
-      {articles &&
-        articles.map((article: any) => {
-          return (
-            <div className={styles.story} key={article.id}>
-              <h1>{article.Title}</h1>
-              <p>{article.description}</p>
-              <div className={styles.aLinkHolder}>
-                <Link href={`stories/${article.Slug}`}>
-                  <a>Read more &#62;</a>
-                </Link>
+      <div className={styles.desktopWidth}>
+        <div className={styles.planet}></div>
+        <br />
+        <br />
+        {articles &&
+          articles.map((article: any) => {
+            return (
+              <div className={styles.story} key={article.id}>
+                <h1>{article.Title}</h1>
+                <p>{article.description}</p>
+                <div className={styles.aLinkHolder}>
+                  <Link href={`stories/${article.Slug}`}>
+                    <a>Read more &#62;</a>
+                  </Link>
+                </div>
               </div>
-            </div>
-          );
-        })}
-      <h3>Dive deeper in Stories</h3>
-      <div className={styles.comingSoon}>
-        <span>
-          Coming <br /> Soon
-        </span>
+            );
+          })}
+        <h3>Dive deeper in Stories</h3>
+        <div className={styles.comingSoon}>
+          <span>
+            Coming <br /> Soon
+          </span>
+        </div>
+        <h4>Have a problem to solve?</h4>
+        <div className={styles.contactUsButton}>
+          <p>Contact us</p>
+          <Link href={"/contact"}>
+            <div className={styles.arrowRight}></div>
+          </Link>
+        </div>
+        <div className={styles.line}></div>
+        <br />
+        <br />
       </div>
-      <h4>Have a problem to solve?</h4>
-      <div className={styles.contactUsButton}>
-        <p>Contact us</p>
-        <Link href={"/contact"}>
-          <div className={styles.arrowRight}></div>
-        </Link>
-      </div>
-      <div className={styles.line}></div>
-      <br />
-      <br />
     </motion.div>
   );
 };

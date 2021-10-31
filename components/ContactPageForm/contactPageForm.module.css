@@ -3,6 +3,21 @@
     margin: 20px 0 100px;
 }
 
+@media (min-width: 900px) {
+    .formControl {
+        width: 600px;
+        margin: 20px auto 100px;
+    }
+
+    .pageOne .marginControl, .pageFour .marginControl {
+        cursor: pointer;
+    }
+
+    .arrowRight {
+        cursor: pointer;
+    }
+}
+
 .marginControl {
     margin: 15px 0;
 }

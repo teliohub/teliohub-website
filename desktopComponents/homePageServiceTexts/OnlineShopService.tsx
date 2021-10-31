@@ -20,7 +20,6 @@ const fadeInBottom = {
     transition: {
       duration: 1,
       ease: easing,
-      delay: 0.3
     },
   },
 };
@@ -36,7 +35,6 @@ const fadeInLeft = {
     transition: {
       duration: 1,
       ease: easing,
-      delay: 0.3
     },
   },
 };
@@ -52,7 +50,6 @@ const fadeInRight = {
     transition: {
       duration: 1,
       ease: easing,
-      delay: 0.3
     },
   },
 };
