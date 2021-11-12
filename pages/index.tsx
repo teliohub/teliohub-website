@@ -26,6 +26,8 @@ import OnlineShopService from "../desktopComponents/homePageServiceTexts/OnlineS
 import { motion } from "framer-motion";
 
 const Home: NextPage = () => {
+
+
   const [isClicked, setIsClicked] = useState<boolean>(false);
   const [mobile, setMobile] = useState<any>();
 
@@ -192,3 +194,4 @@ here`}
 };
 
 export default Home;
+

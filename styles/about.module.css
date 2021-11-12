@@ -145,6 +145,93 @@
     background-repeat: no-repeat;
 }
 
+@media (min-width: 900px) {
+    .servicesDesktop {
+        width: 900px;
+        margin: auto;
+    }
+    .absImagePos {
+        position: relative;
+        width: 280px;
+        height: 150px;
+        background-image: url('../public/assets/about/Ellipse1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .absImageSecondBallPos {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        background-image: url('../public/assets/about/Ellipse2.png');
+        background-repeat: no-repeat;
+        background-position-x: 250px;
+        background-position-y: 20px;
+    }
+    .DivControl {
+        width: 49%;
+        margin: 50px 0;
+        z-index: 2;
+    }
+    .DivControl h2 {
+        font-family: Montserrat;
+        font-size: 50px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: #181818;
+    }
+    .DivControl p {
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: left;
+        color: #181818;
+        margin-top: 30px;
+    }
+    .absImageTargetPos{
+        position: relative;
+        background-position: center;
+    }
+    .absImageTriangleSolidPos {
+        position: relative;
+        background-position: center;
+    }
+    .absImageTriangleShadowPos {
+        background-position: center;
+        width: 100%;
+    }
+    .spanBackgroundColor {
+        background-color: #f9f9f9;
+        font-size: unset;
+        color: #181818;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        font-family: Montserrat;
+        letter-spacing: normal;
+        z-index: 300;
+    }
+    .desktopFirstContainer {
+        width: 337px;
+        height: 260px;
+        border-top: 2px dashed #858585;
+        border-right: 2px dashed #858585;
+        position: absolute;
+        top: 65px;
+        left: 324px;
+        z-index: 0;
+    }
+}
+
+
+
 .aboutProcessContainer {
   display: flex;
   flex-direction: row;
@@ -209,3 +296,5 @@
 .marginBottom {
   margin-bottom: 70px;
 }
+
+/* Desktop */

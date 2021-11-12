@@ -3,10 +3,28 @@ import Image from "next/image";
 import image from "../public/assets/about/wordart.png";
 import styles from "../styles/about.module.css";
 
+import AboutContentMobile from '../components/AboutContentMobile/AboutContentMobile';
+import AboutContentDesktop from "../desktopComponents/AboutContentDesktop/AboutContentDesktop";
+
 import AboutProcessText from "../components/aboutOurProcess/AboutProcessText";
 import { motion } from "framer-motion";
+import {useEffect, useState} from "react";
 
 const About: NextPage = () => {
+  const [mobile, setMobile] = useState<any>();
+
+  useEffect(() => {
+    const updateMobile = () => {
+      setMobile(window.innerWidth < 900 ? true : false);
+    };
+
+    updateMobile();
+    window.addEventListener("resize", updateMobile);
+    return () => {
+      window.removeEventListener("resize", updateMobile);
+    };
+  }, []);
+
   const renderAboutProcessTexts = () => {
     return AboutProcessText.map((item) => (
       <>
@@ -38,55 +56,10 @@ const About: NextPage = () => {
           alt="Contact logo page"
         />
       </div>
-      <div className={styles.container}>
-        <h1>We are</h1>
-        <div className={styles.line}></div>
-        <div className={styles.absImagePos}></div>
-        <div className={styles.absImageSecondBallPos}>
-          <div className={styles.dashedContainerBorder}></div>
-        </div>
-      </div>
-      <div className={styles.services}>
-        <div className={styles.container}>
-          <div className={styles.dashedContainerBorderTwo}></div>
-          <h2>Problem solver</h2>
-
-          <p>
-            <span className={styles.spanBackgroundColor}>We support teams, seeking change, through cutting edge technology
-            and intuitive design.</span>
-          </p>
-
-          <span className={styles.absImageTargetPos}>
-          <div className={styles.dashedContainerBorderThree}></div>
-          </span>
-        </div>
-        <div className={styles.container}>
-          <h2>Precise</h2>
-          <p>
-            <span className={styles.spanBackgroundColor}>
-            We embrace challenges. One pixel at a time, we combine creativity,
-            business and technical knowledge to give you the best product.
-            </span>
-          </p>
-          <span className={styles.absImageTriangleSolidPos}></span>
-          <span className={styles.absImageTriangleShadowPos}></span>
-        </div>
-        <div className={styles.container}>
-          <h2>Open-Minded</h2>
-          <p>
-            We are curious, always looking for new and intuitive resolutions. We
-            approach every project with inspiration and a will for a positive
-            impact.
-          </p>
-        </div>
-      </div>
-      <div className={`${styles.container} ${styles.marginTop}`}>
-        <h1>Our Process</h1>
-        <div className={styles.line}></div>
-      </div>
+      {mobile ? <AboutContentMobile/> : <AboutContentDesktop />}
       {renderAboutProcessTexts()}
       <div className={`${styles.container} ${styles.marginBottom}`}>
-        <div className={styles.line}></div>
+        <div className={styles.line}/>
       </div>
     </motion.div>
   );

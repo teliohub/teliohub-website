@@ -16,11 +16,11 @@ const Stories = ({ articles }: any): JSX.Element => {
         {articles &&
           articles.map((article: any) => {
             return (
-              <div className={styles.story} key={article.id}>
-                <h1>{article.Title}</h1>
+              <div className={styles.story} key={article._id}>
+                <h1>{article.title}</h1>
                 <p>{article.description}</p>
                 <div className={styles.aLinkHolder}>
-                  <Link href={`stories/${article.Slug}`}>
+                  <Link href={`stories/${article.slug}`}>
                     <a>Read more &#62;</a>
                   </Link>
                 </div>
@@ -51,9 +51,12 @@ const Stories = ({ articles }: any): JSX.Element => {
 export default Stories;
 
 export async function getStaticProps() {
-  const res = await axios.get(`${process.env.HEROKU_CONNECTION_API}/articles`);
-  // const res = await axios.get(`http://localhost:1337/articles`);
-  const articles = await res.data;
+  
+  const res = await axios.get(`http://localhost:3000/articles`);
+  
+  const data : any = await res.data;
+
+  const articles = data.articles;
 
   return {
     props: {

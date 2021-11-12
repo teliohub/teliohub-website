@@ -11,7 +11,9 @@
         margin-top: -15px;
     }
 }
+.imageControl {
 
+}
 .body img {
     margin-top: 0px !important;
     transform: translateY(-10px);

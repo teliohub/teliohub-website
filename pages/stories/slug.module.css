@@ -1,6 +1,20 @@
 .slugPost {
     background-color: #313131;
     color: white;
-    padding: 0 5%;
 }
 
+
+
+.slugPostArticle {
+    width: 600px;
+    margin: auto;
+}
+
+.slugPostArticle h1 {
+    font-size: 70px;
+}
+
+.slugPostArticle div {
+    font-size: 30px;
+    padding: 20px 0;
+}
