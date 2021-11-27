@@ -52,7 +52,7 @@ export default Stories;
 
 export async function getStaticProps() {
   
-  const res = await axios.get(`http://localhost:3000/articles`);
+  const res = await axios.get(`https://drowsa-back-express.herokuapp.com/articles`);
   
   const data : any = await res.data;
 

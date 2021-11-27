@@ -4,7 +4,7 @@ import styles from "../../styles/career.module.css";
 import Texts from "./jobs.json";
 import MultiBall from "../../components/MultipleBalls/MultiBall";
 import Image from "next/image";
-import image from "../../public/assets/career/careerBanner.webp";
+import image from "../../public/assets/career/wordart.webp";
 import CareerForm from "../../components/careerForm/CareerForm";
 
 import { motion } from "framer-motion";
@@ -13,14 +13,14 @@ const Career = () => {
   return (
     <motion.div exit={{opacity: 0}}>
       <div className={styles.logoPage}>
-        <div className={styles.body}>
+       
         <Image
           src={image}
           className={styles.imageControl}
           alt="Career logo page"
         />
-        </div>
-        <h1>Career</h1>
+       
+        {/* <h1>Career</h1> */}
       </div>
       <div className={styles.container}>
         <h1>Bring your</h1>

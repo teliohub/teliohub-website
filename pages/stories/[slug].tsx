@@ -34,7 +34,7 @@ export default Story;
 
 export async function getStaticPaths() {
   
-  const res = await axios.get(`http://localhost:3000/articles`);
+  const res = await axios.get(`https://drowsa-back-express.herokuapp.com/articles`);
   const data : any = await res.data;
 
   const articles = data.articles;
@@ -54,7 +54,7 @@ export async function getStaticProps({ params }: any) {
 
   let article : any = null;
   try {
-    const res = await axios.get(`http://localhost:3000/articles/${slug}`);
+    const res = await axios.get(`https://drowsa-back-express.herokuapp.com/articles/${slug}`);
     const data : any = await res.data;
 
    article = data.article[0];

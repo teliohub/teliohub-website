@@ -33,7 +33,7 @@
     margin-top: -15px;
   }
   .container, .aboutMarginControl {
-    width: 600px !important;
+    width: 80% !important;
   }
   
 }
@@ -149,6 +149,22 @@
     .servicesDesktop {
         width: 900px;
         margin: auto;
+        position: relative;
+    }
+    .container h1 {
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: left;
+        color: #181818;
+    }
+    .activeLineText {
+        position: absolute;
+        right: 26%;
     }
     .absImagePos {
         position: relative;
@@ -170,7 +186,7 @@
     .DivControl {
         width: 49%;
         margin: 50px 0;
-        z-index: 2;
+        z-index: 4;
     }
     .DivControl h2 {
         font-family: Montserrat;
@@ -198,6 +214,7 @@
     .absImageTargetPos{
         position: relative;
         background-position: center;
+        z-index: 2;
     }
     .absImageTriangleSolidPos {
         position: relative;
@@ -227,6 +244,51 @@
         top: 65px;
         left: 324px;
         z-index: 0;
+    }
+    .absPrecise {
+        width: 354px;
+        height: 414px;
+        border-top: 2px dashed gray;
+        border-left: 2px dashed gray;
+        border-bottom: 2px dashed gray;
+        position: absolute;
+        right: 313px;
+        top: 86px;
+        z-index: 0;
+    }
+    .paraContainer {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .paraContainer p {
+        width: 680px;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: left;
+        color: #181818;
+        margin: 30px 0;
+    }
+    .aboutProcessContainer h2 {
+        font-size: 100px !important;
+    }
+    .aboutProcessContainer h1 {
+        font-family: Montserrat;
+        font-size: 45px !important;
+        margin: 50px 0;
+        width: 720px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: left;
+        color: #181818;
     }
 }
 

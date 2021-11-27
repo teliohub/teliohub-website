@@ -1,0 +1,9 @@
+.construction {
+    width: 100%;
+    height: 410px;
+    background-image: url('../public/assets/underConstruction/UC.webp');
+    background-position-y: -20px;
+    background-position-x: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

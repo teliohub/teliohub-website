@@ -15,7 +15,7 @@ const About: NextPage = () => {
 
   useEffect(() => {
     const updateMobile = () => {
-      setMobile(window.innerWidth < 900 ? true : false);
+      setMobile(window.innerWidth < 900);
     };
 
     updateMobile();
@@ -29,10 +29,10 @@ const About: NextPage = () => {
     return AboutProcessText.map((item) => (
       <>
         <div className={styles.aboutMarginControl}>
-          <div className={item.activeLine ? styles.activeLineText : ""}></div>
+          <div className={item.activeLine ? styles.activeLineText : ""}/>
           <div className={styles.aboutProcessContainer}>
             <div className={styles.flexRow}>
-              <div className={styles.zero}></div>
+              <div className={styles.zero}/>
               <h2>{item.number}</h2>
             </div>
             <div>
@@ -59,7 +59,7 @@ const About: NextPage = () => {
       {mobile ? <AboutContentMobile/> : <AboutContentDesktop />}
       {renderAboutProcessTexts()}
       <div className={`${styles.container} ${styles.marginBottom}`}>
-        <div className={styles.line}/>
+        <div className={`${styles.desktopControl} ${styles.line}`}/>
       </div>
     </motion.div>
   );

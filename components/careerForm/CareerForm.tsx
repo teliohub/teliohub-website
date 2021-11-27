@@ -78,7 +78,7 @@ const CareerForm = (): JSX.Element => {
         </div>
       </div>
       <h2>Experience</h2>
-      <div className={styles.line}></div>
+      <div className={styles.line}/>
       <div className={styles.exp}>
         <div className={styles.expDIV}>
           <span
@@ -110,7 +110,7 @@ const CareerForm = (): JSX.Element => {
         </div>
       </div>
       <h2>I am good at</h2>
-      <div className={styles.line}></div>
+      <div className={styles.line}/>
       <div className={styles.radioButtons}>
         <div>
           <input
@@ -150,13 +150,13 @@ const CareerForm = (): JSX.Element => {
         <div className={styles.flexRow}>
           <h4>Research</h4>
           <input
-            onChange={() => handleSliderResearch(event)}
-            type="range"
-            min="1"
-            max="100"
-            value={researchSlider}
-            className={styles.slider}
-          ></input>
+    onChange={() => handleSliderResearch(event)}
+    type="range"
+    min="1"
+    max="100"
+    value={researchSlider}
+    className={styles.slider}
+    />
         </div>
         <div className={styles.flexRow}>
         <h4>User journey</h4>

@@ -37,6 +37,7 @@ const AboutContentDesktop = (): JSX.Element => {
                         </p>
                     </div>
                     <div className={`${styles.absImageTargetPos} ${styles.DivControl}`}>
+                        <div className={styles.absPrecise}/>
                     </div>
                 </div>
                 {/* Text Box */}

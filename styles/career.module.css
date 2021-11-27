@@ -6,13 +6,16 @@
 @media (min-width: 900px){
     .container {
         width: 600px;
+        margin: 3rem auto 3rem 10%;
     }
     .logoPage {
         justify-content: unset !important;
         margin-left: 200px;
+        margin-top: -16px;
+        width: 360px;
     }
     .openPositions {
-        width: 600px !important;
+        width: 100% !important;
         margin: auto !important;
     }
 

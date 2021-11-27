@@ -3,11 +3,10 @@
     color: white;
 }
 
-
-
 .slugPostArticle {
-    width: 600px;
+    width: 800px;
     margin: auto;
+    line-height: 54px;
 }
 
 .slugPostArticle h1 {
