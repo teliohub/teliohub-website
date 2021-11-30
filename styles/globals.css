@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+/* @import './articleOne.module.css'; */
 
 html,
 body, * {
@@ -64,3 +65,10 @@ body {
 }
 
 /* global styles for the slug articles */
+
+
+/* Article One */
+
+@import url('./articleOne.module.css');
+
+/* end article One */

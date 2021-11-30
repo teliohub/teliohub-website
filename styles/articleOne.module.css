@@ -1,0 +1,209 @@
+.articleOneContainerMain {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.articleOneContainerMain h1 {
+    font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin: 50px 0;
+}
+
+.articleOneFullLine {
+    width: 100%;
+    height: 6px;
+    background-color: white;
+    margin: 50px 0;
+}
+
+.articleOneFlexWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articleOneFlexWrap div {
+    width: 250px;
+    margin: 30px 0;
+}
+
+.articleOneFlexWrap div h3 {
+    font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f84463;
+}
+.articleOneTechnologies  h3{
+    color: #f84463;
+    font-size: 26px;
+}
+
+.articleOneTechnologies ul li {
+    list-style-type: none;
+    margin: 20px 0 20px 10px;
+    font-size: 20px;
+}
+
+.articleOneFlexWrap div ul li {
+    list-style-type: none;
+    margin: 10px 0;
+    font-size: 28px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.articleOneContainerMain h2 {
+    font-family: Montserrat;
+  font-size: 35px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin: 100px 0 0 0;
+}
+
+.articleOneContainerMain p {
+    font-family: Montserrat;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin: 50px 0;
+}
+
+.articleOneSmallLine {
+    width: 80px;
+    height: 6px;
+    margin-top: 10px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.articleOneOnOffButton {
+    width: 80px;
+    height: 80px;
+    background-image: url('https://res.cloudinary.com/dlfcy5sdi/image/upload/v1638267163/TechItEasy/buttonOff_raos2x.png');
+    background-size: contain;
+    background-position: center;
+    display: block;
+    position: relative;
+}
+
+.articleOneAnimationContainer {
+    position: relative;
+    min-height: 310px;
+    z-index: 0;
+}
+
+#articleOneButton {
+    width: 80px;
+    height: 90px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.articleOneOnOffButton input{
+    
+    left: 0;
+}
+
+#articleOneButton {
+    opacity: 0;
+    z-index: 3;
+}
+
+.articleOneOnOffButton img {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+.articleOneOnOffButton p {
+    position: absolute;
+    width: 400px;
+    top: 260px;
+    margin-left: 30px;
+    margin-top: 10px;
+    opacity: 0;
+    font-size: 18px;
+}
+
+#articleOneButton:checked + label{
+    background-image: url('https://res.cloudinary.com/dlfcy5sdi/image/upload/v1638267213/TechItEasy/buttonOn_cncakf.png') !important;
+}
+
+#articleOneButton:checked + label img {
+    opacity: 1;
+    z-index: -1;
+}
+
+#articleOneButton:checked + label p {
+    opacity: 1;
+}
+
+.articleOneRedLightAnimation {
+    width: 600px;
+    height: 450px;
+    background-image: url('https://res.cloudinary.com/dlfcy5sdi/image/upload/v1638267246/TechItEasy/redLight_utwaus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.articleOneSpanHeader {
+    margin: 30px 0;
+    display: block;
+    font-family: Montserrat;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.articleOneSpanHeader h3 {
+    display: inline-block;
+    margin-right: 5px;
+    font-family: Montserrat;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f84463;
+  font-weight: bold;
+}
