@@ -130,13 +130,13 @@
 .arrowRight::after {
   content: "";
   position: absolute;
-  left: 5px;
+  left: 12px;
   z-index: 11;
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 16px;
+  height: 16px;
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
-  top: 10px;
+  top: 15px;
   transform: rotate(135deg);
 }
