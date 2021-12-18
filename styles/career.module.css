@@ -11,7 +11,7 @@
     .logoPage {
         justify-content: unset !important;
         margin-left: 200px;
-        margin-top: -16px;
+        margin-top: -16px !important;
         width: 360px;
     }
     .openPositions {
@@ -117,6 +117,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 330px;
+    margin-top: -2px;
 }
 
 .body  {

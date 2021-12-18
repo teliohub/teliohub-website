@@ -147,7 +147,7 @@ transform: rotate(225deg);
 
 @media (min-width: 900px) {
   .marginControl {
-    margin-top: 360px;
+    margin-top: 480px;
   }
 
   .flexControlTop {
@@ -158,6 +158,10 @@ transform: rotate(225deg);
 
   .absoluteLearnMore {
     color: white;
+  }
+
+  .container main{
+    margin-top: -210px;
   }
 
   .containerMargin {

@@ -38,7 +38,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     const updateMobile = () => {
-      setMobile(window.innerWidth < 900 ? true : false);
+      setMobile(window.innerWidth < 900);
     };
 
     updateMobile();
@@ -85,7 +85,7 @@ here`}
         </pre>
         <main className={styles.container}>
           <div>
-            <div className={styles.marginControl}></div>
+            <div className={styles.marginControl}/>
             <Box title={"Augmented Reality"} type={"black"} />
             <Box type={"gray"} />
           </div>
@@ -114,7 +114,7 @@ here`}
           }
         >
           <span>Learn more</span>
-          <div onClick={executeScroll} className={styles.arrowRight}></div>
+          <div onClick={executeScroll} className={styles.arrowRight}/>
         </div>
       </div>
       <div className={styles.check} ref={myRef}></div>
@@ -139,7 +139,7 @@ here`}
       <div className={styles.containerMargin}>
         <h1>Lets get down</h1>
         <h1>to business</h1>
-        <div className={styles.lineBreak}></div>
+        <div className={styles.lineBreak}/>
       </div>
       <div className={styles.flexControlTop}>
         {typeof mobile !== undefined && mobile ? (
@@ -186,7 +186,7 @@ here`}
       <div className={styles.containerMargin}>
         <h1>Where is</h1>
         <h1>the magic?</h1>
-        <div className={styles.lineBreak}></div>
+        <div className={styles.lineBreak}/>
       </div>
       <WhatIsHidden />
     </motion.div>
