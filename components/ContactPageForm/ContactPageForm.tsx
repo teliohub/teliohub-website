@@ -2,6 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import styles from "./contactPageForm.module.css";
+import axios from "axios";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -39,25 +40,6 @@ const ContactPageForm = (router: any): JSX.Element => {
   const typeOfService = (service: String) => {
     setService(service);
     changePage();
-  };
-
-  const visualRequest = () => {
-    const objectToAlert = {
-      "Is new project": isNewProject,
-      name: contactName,
-      "company name": companyName,
-      service: service,
-      brief: moreInformation,
-      email: contactEmail,
-    };
-    alert(JSON.stringify(objectToAlert));
-    setIsNewProject(undefined);
-    setContactName("");
-    setCompanyName("");
-    setService("");
-    setMoreInformation("");
-    setContactEmail("");
-    setPageIndex(0);
   };
 
   useEffect(() => {
@@ -224,15 +206,35 @@ const ContactPageForm = (router: any): JSX.Element => {
           }
           type="text"
         />
-        <button onClick={() => visualRequest()}>
+        <button type={"submit"}>
           <div className={styles.arrowRight}></div>
         </button>
       </motion.div>
     </React.Fragment>,
   ];
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e : any) => {
+
     e.preventDefault();
+
+    try {
+      await axios.post("http://localhost:3000/contact/data", {
+        "isNewProject" : isNewProject,
+        "contactName" : contactName,
+        "companyName" : companyName,
+        "service" : service,
+        "moreInformation" : moreInformation,
+        "contactEmail" : contactEmail
+      })
+    } catch (error) {}
+
+    setIsNewProject(undefined);
+    setContactName("");
+    setCompanyName("");
+    setService("");
+    setMoreInformation("");
+    setContactEmail("");
+    setPageIndex(0);
   };
 
   return (
