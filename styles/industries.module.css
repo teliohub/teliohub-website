@@ -8,6 +8,19 @@
     background-size: contain;
 }
 
+@media (max-width: 1400px ) {
+    .construction {
+        height: 250px;
+        background-position-x: 150px;
+    }
+}
+
+@media (max-width: 630px ) {
+    .construction {
+        background-position-x: 0px;
+    }
+}
+
 .container {
     position: relative;
     height: 700px;

@@ -207,7 +207,7 @@ const ContactPageForm = (router: any): JSX.Element => {
           type="text"
         />
         <button type={"submit"}>
-          <div className={styles.arrowRight}></div>
+          <div className={styles.arrowRight}/>
         </button>
       </motion.div>
     </React.Fragment>,

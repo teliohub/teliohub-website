@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const Industries = () => {
     return (
         <motion.div exit={{opacity: 0}} className={styles.container}>
-            <div className={styles.construction}></div>
-            <div className={styles.robe}></div>
-            <div className={styles.anchor}></div>
+            <div className={styles.construction}/>
+            <div className={styles.robe}/>
+            <div className={styles.anchor}/>
         </motion.div>
     )
 }
