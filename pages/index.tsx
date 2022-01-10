@@ -184,12 +184,13 @@ here`}
       )}
         <br/>
         <br/>
-      {/*<div className={styles.containerMargin}>*/}
-      {/*  <h1>Where is</h1>*/}
-      {/*  <h1>the magic?</h1>*/}
-      {/*  <div className={styles.lineBreak}/>*/}
-      {/*</div>*/}
-      {/*<WhatIsHidden />*/}
+      <div className={styles.containerMargin}>
+        <h1>Where is</h1>
+        <h1>the magic?</h1>
+        <div className={styles.lineBreak}/>
+          <h2>We do these things in the background, so you don&#39;t have to think about it.</h2>
+      </div>
+      <WhatIsHidden />
     </motion.div>
   );
 };
