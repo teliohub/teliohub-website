@@ -62,23 +62,23 @@ const CareerForm = (): JSX.Element => {
         setGoodAt(goodAt);
     }
 
-    const handleTextInformation = (event) => {
+    const handleTextInformation = (event: any) => {
         setTextInformation(event.target.value);
     }
 
-    const handlePaperWorkName = (event) => {
+    const handlePaperWorkName = (event: any) => {
         setPaperName(event.target.value);
     }
 
-    const handlePaperWorkCompanyName = (event) => {
+    const handlePaperWorkCompanyName = (event: any) => {
         setPaperCompanyName(event.target.value);
     }
 
-    const handlePaperWorkEmail = (event) => {
+    const handlePaperWorkEmail = (event: any) => {
         setPaperEmail(event.target.value);
     }
 
-    const handlePhoneNumberChange = (event) => {
+    const handlePhoneNumberChange = (event: any) => {
         setValue(event.target.value)
     }
 
