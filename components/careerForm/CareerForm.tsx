@@ -126,7 +126,7 @@ const CareerForm = (): JSX.Element => {
                     setPaperName('')
                     setPaperCompanyName('')
                     setPaperEmail('')
-                    setValue(null)
+                    setValue(undefined)
                 }
             }
         )
