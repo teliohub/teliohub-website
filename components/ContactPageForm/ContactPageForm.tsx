@@ -1,6 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
 import styles from "./contactPageForm.module.css";
 import axios from "axios";
 
@@ -68,14 +67,14 @@ const ContactPageForm = (router: any): JSX.Element => {
           className={styles.marginControl}
           onClick={() => setIsNewProject(true)}
         >
-          <div className={styles.radioButton}></div>
+          <div className={styles.radioButton}/>
           <h2>New project</h2>
         </div>
         <div
           className={styles.marginControl}
           onClick={() => setIsNewProject(false)}
         >
-          <div className={styles.radioButton}></div>
+          <div className={styles.radioButton}/>
           <h2>Other</h2>
         </div>
       </motion.div>
@@ -91,7 +90,7 @@ const ContactPageForm = (router: any): JSX.Element => {
         <h1>What&apos;s your name?</h1>
         <input
           className={styles.marginControl}
-          required
+          required={true}
           value={contactName}
           placeholder="Your name"
           onInput={(e: React.ChangeEvent<HTMLInputElement>) =>
@@ -99,8 +98,8 @@ const ContactPageForm = (router: any): JSX.Element => {
           }
           type="text"
         />
-        <button onClick={() => changePage()}>
-          <div className={styles.arrowRight}></div>
+        <button onClick={() => contactName ? changePage() : null}>
+          <div className={styles.arrowRight}/>
         </button>
       </motion.div>
     </React.Fragment>,
@@ -115,15 +114,15 @@ const ContactPageForm = (router: any): JSX.Element => {
         <input
           className={styles.marginControl}
           placeholder="Your company name"
-          required
+          required={true}
           value={companyName}
           onInput={(e: React.ChangeEvent<HTMLInputElement>) =>
             setCompanyName(e.target.value)
           }
           type="text"
         />
-        <button onClick={() => changePage()}>
-          <div className={styles.arrowRight}></div>
+        <button onClick={() => companyName ? changePage() : null}>
+          <div className={styles.arrowRight}/>
         </button>
       </motion.div>
     </React.Fragment>,
@@ -139,28 +138,28 @@ const ContactPageForm = (router: any): JSX.Element => {
           className={styles.marginControl}
           onClick={() => typeOfService("Mobile applications")}
         >
-          <div className={styles.radioButton}></div>
+          <div className={styles.radioButton}/>
           <h2>Mobile Applications</h2>
         </div>
         <div
           className={styles.marginControl}
           onClick={() => typeOfService("Augmented reality")}
         >
-          <div className={styles.radioButton}></div>
+          <div className={styles.radioButton}/>
           <h2>Augmented reality</h2>
         </div>
         <div
           className={styles.marginControl}
           onClick={() => typeOfService("Online shops")}
         >
-          <div className={styles.radioButton}></div>
+          <div className={styles.radioButton}/>
           <h2>Online shops</h2>
         </div>
         <div
           className={styles.marginControl}
           onClick={() => typeOfService("Products")}
         >
-          <div className={styles.radioButton}></div>
+          <div className={styles.radioButton}/>
           <h2>Products</h2>
         </div>
       </motion.div>
@@ -176,15 +175,15 @@ const ContactPageForm = (router: any): JSX.Element => {
         <h2>Let us know about your problem, budget and needs.</h2>
         <input
           placeholder="Your brief"
-          required
+          required={true}
           value={moreInformation}
           onInput={(e: React.ChangeEvent<HTMLInputElement>) =>
             setMoreInformation(e.target.value)
           }
           type="text"
         />
-        <button onClick={() => changePage()}>
-          <div className={styles.arrowRight}></div>
+        <button onClick={() => moreInformation ? changePage() : null}>
+          <div className={styles.arrowRight}/>
         </button>
       </motion.div>
     </React.Fragment>,
@@ -199,12 +198,12 @@ const ContactPageForm = (router: any): JSX.Element => {
         <input
           className={styles.marginControl}
           placeholder="Your email"
-          required
+          required={true}
           value={contactEmail}
           onInput={(e: React.ChangeEvent<HTMLInputElement>) =>
             setContactEmail(e.target.value)
           }
-          type="text"
+          type="email"
         />
         <button type={"submit"}>
           <div className={styles.arrowRight}/>
@@ -218,7 +217,7 @@ const ContactPageForm = (router: any): JSX.Element => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:3000/contact/data", {
+      await axios.post("https://drowsa-back-express.herokuapp.com/contact/data", {
         "isNewProject" : isNewProject,
         "contactName" : contactName,
         "companyName" : companyName,

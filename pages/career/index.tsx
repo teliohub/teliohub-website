@@ -27,20 +27,20 @@ const Career = () => {
         <h2>talent, hard work and</h2>
         <h2>passion and we will</h2>
         <h2>make it work for you</h2>
-        <div className={styles.line}></div>
+        <div className={styles.line}/>
         <div className={styles.flexRow}>
           <div className={styles.flexColumn}>
             <div className={styles.flexRow}>
-              <div className={styles.circle}></div>
-              <div className={styles.circle}></div>
+              <div className={styles.circle}/>
+              <div className={styles.circle}/>
             </div>
             <div className={styles.flexRow}>
-              <div className={styles.circle}></div>
-              <div className={styles.circle}></div>
+              <div className={styles.circle}/>
+              <div className={styles.circle}/>
             </div>
             <div className={styles.flexRow}>
-              <div className={styles.circle}></div>
-              <div className={styles.circle}></div>
+              <div className={styles.circle}/>
+              <div className={styles.circle}/>
             </div>
           </div>
           <div>
@@ -61,7 +61,7 @@ const Career = () => {
                 <p>{item.description}</p>
               </div>
               <button onClick={() => router.push("/career/" + item.title)}>
-                <div className={styles.arrowRight}></div>
+                <div className={styles.arrowRight}/>
               </button>
             </div>
           );
@@ -69,14 +69,14 @@ const Career = () => {
       </div>
       <div className={styles.container}>
         <h2>Because we are a team and we always try to find the best fit...</h2>
-        <div className={styles.line}></div>
+        <div className={styles.line}/>
         <MultiBall />
         <p>
           ...if you think you are a match, tell us a little bit more about
           yourself:
         </p>
         <h2>Lets start! You are?</h2>
-        <div className={styles.line}></div>
+        <div className={styles.line}/>
         <CareerForm />
       </div>
     </motion.div>
