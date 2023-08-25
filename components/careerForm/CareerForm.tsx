@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import styles from "./careerForm.module.css";
 import "react-phone-number-input/style.css";
-import PhoneInput from "react-phone-number-input";
 import axios from "axios";
 
 const CareerForm = (): JSX.Element => {
@@ -314,13 +313,13 @@ const CareerForm = (): JSX.Element => {
                 <input onChange={() => handlePaperWorkName(event)} type="text" required={true} placeholder="Your name"/>
                 <input onChange={() => handlePaperWorkCompanyName(event)} type="text" required={true} placeholder="Your company name"/>
                 <input onChange={() => handlePaperWorkEmail(event)} type="email" required={true} placeholder="Your email"/>
-                {/* <input type="text" placeholder="Your phone number" /> */}
-                <PhoneInput
-                    placeholder="Enter phone number"
-                    value={value}
-                    required={true}
-                    onChange={() => handlePhoneNumberChange(event)}
-                />
+                 <input type="text" onChange={() => handlePhoneNumberChange(event)} placeholder="Your phone number" />
+                {/*<PhoneInput*/}
+                {/*    placeholder="Enter phone number"*/}
+                {/*    value={value}*/}
+                {/*    required={true}*/}
+                {/*    onChange={() => handlePhoneNumberChange(event)}*/}
+                {/*/>*/}
             </div>
             <div className={styles.btnHolder}>
                 <button type="submit" className={styles.submitBtn}>Submit</button>
