@@ -13,7 +13,7 @@ const ServiceContainer = (props: Props): JSX.Element => {
   return (
     <div className={styles.container}>
       <div className={styles.imageControl}>
-        <Image src={props.imageUrl} />
+        <Image alt={props.title} src={props.imageUrl} />
         <h1>{props.imageText}</h1>
       </div>
       <h2>{props.title}</h2>

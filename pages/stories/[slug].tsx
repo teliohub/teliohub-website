@@ -138,39 +138,39 @@ const Story = ({ article }: any): JSX.Element => {
 };
 
 export default Story;
-
-export async function getStaticPaths() {
-  const res = await axios.get(
-    `https://drowsa-back-express.herokuapp.com/articles`
-  );
-  const data: any = await res.data;
-
-  const articles = data.articles;
-
-  const paths = articles.map((article: any) => ({
-    params: { slug: article.slug },
-  }));
-
-  return {
-    paths,
-    fallback: true,
-  };
-}
-
-export async function getStaticProps({ params }: any) {
-  const { slug } = params;
-
-  let article: any = null;
-  try {
-    const res = await axios.get(
-      `https://drowsa-back-express.herokuapp.com/articles/${slug}`
-    );
-    const data: any = await res.data;
-
-    article = data.article[0];
-  } catch (err) {}
-
-  return {
-    props: { article },
-  };
-}
+//
+// export async function getStaticPaths() {
+//   const res = await axios.get(
+//     `https://drowsa-back-express.herokuapp.com/articles`
+//   );
+//   const data: any = await res.data;
+//
+//   const articles = data.articles;
+//
+//   const paths = articles.map((article: any) => ({
+//     params: { slug: article.slug },
+//   }));
+//
+//   return {
+//     paths,
+//     fallback: true,
+//   };
+// }
+//
+// export async function getStaticProps({ params }: any) {
+//   const { slug } = params;
+//
+//   let article: any = null;
+//   try {
+//     const res = await axios.get(
+//       `https://drowsa-back-express.herokuapp.com/articles/${slug}`
+//     );
+//     const data: any = await res.data;
+//
+//     article = data.article[0];
+//   } catch (err) {}
+//
+//   return {
+//     props: { article },
+//   };
+// }

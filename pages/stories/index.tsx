@@ -50,17 +50,17 @@ const Stories = ({ articles }: any): JSX.Element => {
 
 export default Stories;
 
-export async function getStaticProps() {
-  
-  const res = await axios.get(`https://drowsa-back-express.herokuapp.com/articles`);
-  
-  const data : any = await res.data;
-
-  const articles = data.articles;
-
-  return {
-    props: {
-      articles,
-    },
-  };
-}
+// export async function getStaticProps() {
+//
+//   const res = await axios.get(`https://drowsa-back-express.herokuapp.com/articles`);
+//
+//   const data : any = await res.data;
+//
+//   const articles = data.articles;
+//
+//   return {
+//     props: {
+//       articles,
+//     },
+//   };
+// }

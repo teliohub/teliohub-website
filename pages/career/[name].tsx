@@ -16,7 +16,7 @@ const Name = (): JSX.Element => {
                 Jobs.map((item) => {
                     if(item.title === currentJob){
                         return (
-                            <div className={styles.container}>
+                            <div key={item.title} className={styles.container}>
                                 <h1>{item.title}</h1>
                                 <p>{item.description}</p>
                             </div>
