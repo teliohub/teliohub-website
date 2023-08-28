@@ -24,7 +24,7 @@ const Layout = ({ children }: any) => {
     <React.Fragment>
       {mobile !== undefined && mobile ? <Navigation /> : <NavigationDesktop /> }
       <main className={styles.layout}>{children}</main>
-      <Footer />
+      {/*<Footer />*/}
     </React.Fragment>
   );
 };
