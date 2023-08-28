@@ -11,7 +11,7 @@ config.autoAddCss = false;
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <Layout>
-      <AnimatePresence  exitBeforeEnter >
+      <AnimatePresence  mode={'wait'}>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
     </Layout>

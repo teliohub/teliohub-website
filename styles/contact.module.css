@@ -13,12 +13,17 @@
         width: 550px;
     }
 }
+
 .imageControl {
 
 }
+
 .body img {
     margin-top: 0px !important;
     transform: translateY(-10px);
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
 }
 
 .logoPage h1 {

@@ -1,98 +1,101 @@
 .logoPage {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 360px;
 }
 
 .logoPage img {
-  margin-top: -1px !important;
-  transform: translateY(-10px);
+    margin-top: -1px !important;
+    transform: translateY(-10px);
     width: 100%;
+    height: 200px;
+    object-fit: contain;
 }
 
 .body {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 .line {
-  width: 50px;
-  height: 5px;
-  background-color: #181818;
-  margin: 10px 0 20px;
+    width: 50px;
+    height: 5px;
+    background-color: #181818;
+    margin: 10px 0 20px;
 }
 
 .container {
-  width: 90%;
-  margin: auto;
-  position: relative;
+    width: 90%;
+    margin: auto;
+    position: relative;
 }
 
 @media (min-width: 900px) {
-  .logoPage {
-    justify-content: unset;
-    margin-left: 200px;
-    margin-top: -15px;
-  }
-  .container, .aboutMarginControl {
-    width: 80% !important;
-  }
-  
+    .logoPage {
+        justify-content: unset;
+        margin-left: 200px;
+        margin-top: -15px;
+    }
+
+    .container, .aboutMarginControl {
+        width: 80% !important;
+    }
+
 }
 
 .flexRow {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .zero {
-  width: 120px;
-  height: 225px;
-  background-image: url('../public/assets/about/0.png');
-  background-position: center;
-  background-size: cover;
-  margin-right: -30px;
+    width: 120px;
+    height: 225px;
+    background-image: url('../public/assets/about/0.png');
+    background-position: center;
+    background-size: cover;
+    margin-right: -30px;
 }
 
 .container h1 {
-  font-weight: 900;
-  color: #181818;
-  font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #181818;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container h2 {
-  color: #181818;
-  font-size: 22px;
-  font-weight: 600;
+    color: #181818;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .services p {
-  margin: 20px 0;
-  font-size: 1.2rem;
-  color: #181818;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  font-family: Montserrat;
-  letter-spacing: normal;
-  height: 75px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #181818;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    font-family: Montserrat;
+    letter-spacing: normal;
+    height: 75px;
 }
 
 .spanBackgroundColor {
-  background-color: #f9f9f9;
-  font-size: 1.2rem;
-  color: #181818;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  font-family: Montserrat;
-  letter-spacing: normal;
-  max-height: 75px !important;
+    background-color: #f9f9f9;
+    font-size: 1.2rem;
+    color: #181818;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    font-family: Montserrat;
+    letter-spacing: normal;
+    max-height: 75px !important;
 }
 
 .services div {
-  margin: 250px auto;
+    margin: 250px auto;
 }
 
 .services div:last-child {
@@ -153,6 +156,7 @@
         margin: auto;
         position: relative;
     }
+
     .container h1 {
         font-family: Montserrat, serif;
         font-size: 70px;
@@ -164,10 +168,12 @@
         text-align: left;
         color: #181818;
     }
+
     .activeLineText {
         position: absolute;
         right: 26%;
     }
+
     .absImagePos {
         position: relative;
         width: 280px;
@@ -176,6 +182,7 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+
     .absImageSecondBallPos {
         position: absolute;
         width: 100%;
@@ -185,11 +192,13 @@
         background-position-x: 250px;
         background-position-y: 20px;
     }
+
     .DivControl {
         width: 49%;
         margin: 50px 0;
         z-index: 4;
     }
+
     .DivControl h2 {
         font-family: Montserrat;
         font-size: 50px;
@@ -201,6 +210,7 @@
         text-align: left;
         color: #181818;
     }
+
     .DivControl p {
         font-family: Montserrat;
         font-size: 30px;
@@ -213,19 +223,23 @@
         color: #181818;
         margin-top: 30px;
     }
-    .absImageTargetPos{
+
+    .absImageTargetPos {
         position: relative;
         background-position: center;
         z-index: 2;
     }
+
     .absImageTriangleSolidPos {
         position: relative;
         background-position: center;
     }
+
     .absImageTriangleShadowPos {
         background-position: center;
         width: 100%;
     }
+
     .spanBackgroundColor {
         background-color: #f9f9f9;
         font-size: unset;
@@ -237,6 +251,7 @@
         letter-spacing: normal;
         z-index: 300;
     }
+
     .desktopFirstContainer {
         width: 337px;
         height: 260px;
@@ -247,6 +262,7 @@
         left: 324px;
         z-index: 0;
     }
+
     .absPrecise {
         width: 354px;
         height: 414px;
@@ -258,11 +274,13 @@
         top: 86px;
         z-index: 0;
     }
+
     .paraContainer {
         width: 80%;
         display: flex;
         justify-content: flex-end;
     }
+
     .paraContainer p {
         width: 680px;
         font-family: Montserrat;
@@ -276,12 +294,14 @@
         color: #181818;
         margin: 30px 0;
     }
+
     .aboutProcessContainer h2 {
         font-size: 180px !important;
     }
+
     .aboutProcessContainer h1 {
         font-family: Montserrat;
-        font-size: 70px !important;
+        font-size: 50px !important;
         margin: 50px 0;
         width: 100%;
         font-weight: 900;
@@ -295,70 +315,71 @@
 }
 
 
-
 .aboutProcessContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0.5rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem auto;
 }
+
 .aboutProcessContainer h1 {
-  font-size: 21px;
-  margin-left: 1rem;
+    font-size: 21px;
+    margin-left: 1rem;
 }
+
 .aboutProcessContainer h2 {
-  font-size: 90px;
-  margin: 0rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+    font-size: 90px;
+    margin: 0rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
 
 .activeLineText {
-  width: 150px;
-  height: 5px;
-  background-color: #181818;
-  margin: 1rem 0;
+    width: 150px;
+    height: 5px;
+    background-color: #181818;
+    margin: 1rem 0;
 }
 
 .aboutMarginControl {
-  width: 90%;
-  margin: auto;
+    width: 90%;
+    margin: auto;
 }
 
 .dashedContainerBorder {
-  width: 50px;
-  height: 330px;
-  border-top: 2px dashed #858585;;
-  border-right: 2px dashed #858585;;
-  position: absolute;
-  left: 250px;
-  top: 55px;
+    width: 50px;
+    height: 330px;
+    border-top: 2px dashed #858585;;
+    border-right: 2px dashed #858585;;
+    position: absolute;
+    left: 250px;
+    top: 55px;
 }
 
 .dashedContainerBorderTwo {
-  width: 215px;
-  height: 10px;
-  border-bottom: 2px dashed #858585;
-  position: absolute;
-  left: 86px;
-  top: -100px;
+    width: 215px;
+    height: 10px;
+    border-bottom: 2px dashed #858585;
+    position: absolute;
+    left: 86px;
+    top: -100px;
 }
 
 .dashedContainerBorderThree {
-  width: 2px;
-  height: 200px;
-  border-left: 2px dashed #858585;
-  position: absolute;
-  left: 85px;
-  top: -50px;
+    width: 2px;
+    height: 200px;
+    border-left: 2px dashed #858585;
+    position: absolute;
+    left: 85px;
+    top: -50px;
 }
 
 .marginTop {
-  margin-top: 100px;
+    margin-top: 100px;
 }
 
 .marginBottom {
-  margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 /* Desktop */

@@ -217,7 +217,7 @@ const ContactPageForm = (router: any): JSX.Element => {
     e.preventDefault();
 
     try {
-      await axios.post("https://drowsa-back-express.herokuapp.com/contact/data", {
+      await axios.post("https://submit-form.com/iyjrXtHA", {
         "isNewProject" : isNewProject,
         "contactName" : contactName,
         "companyName" : companyName,

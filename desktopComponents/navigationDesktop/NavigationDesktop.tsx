@@ -21,39 +21,31 @@ const NavigationDesktop = (): JSX.Element => {
           <li>
             
             <Link href="/">
-              <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            
-            <Link href="/industries">
-              <a >
-                Industries
-              </a>
+              <span>Home</span>
             </Link>
           </li>
           <li>
            
             <Link href="/stories">
-              <a>Stories</a>
+              <span>Stories</span>
             </Link>
           </li>
           <li>
             
             <Link href="/about">
-              <a >About</a>
+              <span >About</span>
             </Link>
           </li>
-          <li>
-           
-            <Link href="/career">
-              <a >Career</a>
-            </Link>
-          </li>
+          {/*<li>*/}
+          {/* */}
+          {/*  <Link href="/career">*/}
+          {/*    <span >Career</span>*/}
+          {/*  </Link>*/}
+          {/*</li>*/}
           <li>
            
             <Link href="/contact">
-              <a>Contact</a>
+              <span>Contact</span>
             </Link>
           </li>
         </ul>

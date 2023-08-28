@@ -21,7 +21,7 @@ const Stories = ({ articles }: any): JSX.Element => {
                 <p>{article.description}</p>
                 <div className={styles.aLinkHolder}>
                   <Link href={`stories/${article.slug}`}>
-                    <a>Read more &#62;</a>
+                    Read more &#62;
                   </Link>
                 </div>
               </div>
