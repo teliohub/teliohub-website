@@ -217,7 +217,7 @@ const ContactPageForm = (router: any): JSX.Element => {
     e.preventDefault();
 
     try {
-      await axios.post("https://submit-form.com/iyjrXtHA", {
+      await axios.post("/api/formRequest", {
         "isNewProject" : isNewProject,
         "contactName" : contactName,
         "companyName" : companyName,
